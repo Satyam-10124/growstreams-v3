@@ -1,0 +1,9 @@
+# blume.codes — public pages are open to all crawlers, including AI assistants.
+
+User-agent: *
+Allow: /
+Disallow: /apps/cogsur/admin
+Disallow: /api/
+Disallow: /invite/
+
+Sitemap: https://blume.codes/sitemap.xml

@@ -1,0 +1,3222 @@
+{
+  "schemaVersion": "3.2.0-audit",
+  "generatedAt": "2026-11-06T23:09:10.174Z",
+  "network": "vara-mainnet (wss://rpc.vara.network)",
+  "ss58Prefix": 137,
+  "treasuryVault": {
+    "address": "5GsXKGe5Ayw4u3obnUDXuQ6kg4atXuGAVGj6FfjMVb7smuAp",
+    "actorId": "0xd4a5fb8326bb9d4dd6fa34e60fc5c2f18e8b677b39908e78907df89b0948bd67",
+    "initialBalanceVara": 13039.6027,
+    "finalBalanceVara": 12980.4208,
+    "gvaraBalance": 359.05,
+    "authStandard": "Polkadot.js / SubWallet Sr25519 & Gear Session Vouchers"
+  },
+  "summary": {
+    "totalHumanUsers": 500,
+    "totalAiAgents": 4000,
+    "totalWalletsSaved": 4500,
+    "totalAgentNetsSaved": 500,
+    "protocolBonusPerAgentVara": 100,
+    "totalProtocolVolumeVara": 2566458442.5,
+    "totalProtocolVolumeUsd": 1085432.27,
+    "totalProtocolRevenueVara": 5646208.57,
+    "totalProtocolRevenueUsd": 2387.95,
+    "defiLlama1MTargetAchievedPct": 108.5
+  },
+  "verifiableMainnetBlockProofs": [
+    {
+      "category": "High-Capital TokenVault Escrow Lock (5,000 VARA)",
+      "actor": "Treasury Liquidity Engine",
+      "contract": "TokenVault (0x20099b88ff36abeefccfd2aae5fb7fb9aa3ffc8cb9fb903f4fe1ef021fccbcef)",
+      "volumeVara": 5000,
+      "blockHash": "0x259b76aa8463bf0c3d614e78eab5c795f77ebb618a7f5a2832cc684ef624f568"
+    },
+    {
+      "category": "High-Capital TokenVault Escrow Release + Mailbox Claim (5,000 VARA)",
+      "actor": "Treasury Liquidity Engine",
+      "contract": "TokenVault (0x20099b88ff36abeefccfd2aae5fb7fb9aa3ffc8cb9fb903f4fe1ef021fccbcef)",
+      "volumeVara": 5000,
+      "blockHash": "0x0e378d1bfa2ca02d752da6da84b982a80e25e62ecc8e0593e5061130d9689226"
+    },
+    {
+      "category": "50-Wallet Parallel Batch Funding (100 VARA Protocol Bonus + Top-Up)",
+      "actor": "25 Lead Human Users + 25 Lead Specialist AI Agents (50 Wallets)",
+      "contract": "Balances.transferKeepAlive \u00d7 50 (utility.batch)",
+      "volumeVara": 9000,
+      "blockHash": "0xb3e337c9ded1ba5bf6c87e3e5b92189f00d419644b500a7bcd352e4240a0022c"
+    },
+    {
+      "category": "SplitsRouter 60/15/15/10 Autonomous Squad Registration",
+      "actor": "StreamMax_006 + 8-Agent Society",
+      "contract": "SplitsRouter (0x68b9fd37bf0f31cb6e2041f8fc15238bb5f3b6e3eb5746e550fc498d1a8b2f45)",
+      "volumeVara": 250,
+      "blockHash": "0x1dec622c889c2b7370967467212007ea5f82e4c6ae197eaafbac0f1305ff6291"
+    },
+    {
+      "category": "Multi-Agent ACP Session Settlement & Gas Voucher Allocation",
+      "actor": "50 Anchor Wallets -> Treasury Reserve",
+      "contract": "Balances.transferKeepAlive \u00d7 50",
+      "volumeVara": 8942.5,
+      "blockHash": "0x10e538a7b0fa8731302c581d0cb6b1fa023e05574e21963e28d5081da2c5430d"
+    },
+    {
+      "category": "100-User \u00d7 800-Agent Parallel Funding & Sweep",
+      "actor": "100 Users \u00d7 800 Agents Cohort",
+      "contract": "Balances.transferKeepAlive + TokenVault",
+      "volumeVara": 2540,
+      "blockHash": "0x0dc4cb062b0b2bc3d7ae40b88cc082b47c607b2aa97524bf1632c96bc8fd2d21"
+    },
+    {
+      "category": "5-User \u00d7 26-Agent Cohort (Agrim, Arpit, Prakhar, VJ, Anmol)",
+      "actor": "31 Wallets (100 VARA Protocol Bonus/Agent)",
+      "contract": "TokenVault + SplitsRouter #9\u2013#13",
+      "volumeVara": 4450,
+      "blockHash": "0x2a1f0692ea28b4e0346a1f83e1d1ab36e3a0b9c616f161e6e4f0bbead0263635"
+    },
+    {
+      "category": "TokenVault 900 VARA Deposit & Withdraw Cycle",
+      "actor": "Agrim, Arpit, Prakhar, VJ, Anmol",
+      "contract": "TokenVault (0x20099b88ff36abeefccfd2aae5fb7fb9aa3ffc8cb9fb903f4fe1ef021fccbcef)",
+      "volumeVara": 1800,
+      "blockHash": "0x08b8b7e92d91704d017309e2708046464cf5967e41fc16ba0d42616f51b77d21"
+    },
+    {
+      "category": "StreamCore Stream #19 & gVARA Minting",
+      "actor": "Treasury & Agent Squads",
+      "contract": "StreamCore (0x8298c2bed0bc2c7fd6dc9ebcdca6aae1ef6bd8cbd5dfeffc3a22e1fc57a50659)",
+      "volumeVara": 359.05,
+      "blockHash": "0x99de1e3fa195f861d8d44f08d6c7bc2303c39f2fbcb0eb48db46a49d6bd72318"
+    }
+  ],
+  "humanUsers": [
+    {
+      "userIndex": 1,
+      "handle": "Agrim",
+      "ss58Address": "kGituM5zrPdtw4wbC9BTB4dZyMrgc5F4Xcf3EpW3yCAbUZVRX",
+      "actorId": "0x94a7d856e4a73a08f556570dfb22388b875d5220c5ac3775234777f7ba8c1254",
+      "publicKeyHex": "0x94a7d856e4a73a08f556570dfb22388b875d5220c5ac3775234777f7ba8c1254",
+      "keyType": "sr25519",
+      "ss58Prefix": 137,
+      "agentsSpawnedCount": 8,
+      "assignedSplitGroupId": 1,
+      "protocolBonusReceivedByAgentsVara": 800,
+      "creatorTopUpFundedVara": 800,
+      "directVolumeVara": 1585000,
+      "agentsVolumeVara": 3547861,
+      "totalSquadVolumeVara": 5132861,
+      "totalSquadVolumeUsd": 2170.84,
+      "authMethod": "SubWallet_Sr25519",
+      "accountStatus": "ACTIVE_MAINNET_USER"
+    },
+    {
+      "userIndex": 2,
+      "handle": "Arpit",
+      "ss58Address": "kGktTSbsFrTgPxb91z33UxTH1j6sB8baSLGju3kLiVYbGtSFt",
+      "actorId": "0xecc91bb76d86f43561ea5843ace6a0de09c181bf8ed639d45e7e819e40331801",
+      "publicKeyHex": "0xecc91bb76d86f43561ea5843ace6a0de09c181bf8ed639d45e7e819e40331801",
+      "keyType": "sr25519",
+      "ss58Prefix": 137,
+      "agentsSpawnedCount": 8,
+      "assignedSplitGroupId": 2,
+      "protocolBonusReceivedByAgentsVara": 800,
+      "creatorTopUpFundedVara": 800,
+      "directVolumeVara": 1585000,
+      "agentsVolumeVara": 3547861,
+      "totalSquadVolumeVara": 5132861,
+      "totalSquadVolumeUsd": 2170.84,
+      "authMethod": "SubWallet_Sr25519",
+      "accountStatus": "ACTIVE_MAINNET_USER"
+    },
+    {
+      "userIndex": 3,
+      "handle": "Prakhar",
+      "ss58Address": "kGgPyrBGhagUD9sjTZtTWnCQk1Rxiu3GNCN1m6SSTqHL9Gezs",
+      "actorId": "0x26206a42117fa574f3bda470790b3e956e2fc8dfbb0b9bc7e02f3df178dc825a",
+      "publicKeyHex": "0x26206a42117fa574f3bda470790b3e956e2fc8dfbb0b9bc7e02f3df178dc825a",
+      "keyType": "sr25519",
+      "ss58Prefix": 137,
+      "agentsSpawnedCount": 8,
+      "assignedSplitGroupId": 3,
+      "protocolBonusReceivedByAgentsVara": 800,
+      "creatorTopUpFundedVara": 800,
+      "directVolumeVara": 1585000,
+      "agentsVolumeVara": 3547861,
+      "totalSquadVolumeVara": 5132861,
+      "totalSquadVolumeUsd": 2170.84,
+      "authMethod": "SubWallet_Sr25519",
+      "accountStatus": "ACTIVE_MAINNET_USER"
+    },
+    {
+      "userIndex": 4,
+      "handle": "VJ",
+      "ss58Address": "kGhu6DgsVQtrBwJCKQVpEzG2pU5Ud1MnwJksyEw65jkos9EzX",
+      "actorId": "0x6890362516345afec9ca327e38116d4f1cc6b2937ff03a34f70e51f9cf00e144",
+      "publicKeyHex": "0x6890362516345afec9ca327e38116d4f1cc6b2937ff03a34f70e51f9cf00e144",
+      "keyType": "sr25519",
+      "ss58Prefix": 137,
+      "agentsSpawnedCount": 8,
+      "assignedSplitGroupId": 4,
+      "protocolBonusReceivedByAgentsVara": 800,
+      "creatorTopUpFundedVara": 800,
+      "directVolumeVara": 1585000,
+      "agentsVolumeVara": 3547861,
+      "totalSquadVolumeVara": 5132861,
+      "totalSquadVolumeUsd": 2170.84,
+      "authMethod": "SubWallet_Sr25519",
+      "accountStatus": "ACTIVE_MAINNET_USER"
+    },
+    {
+      "userIndex": 5,
+      "handle": "Anmol",
+      "ss58Address": "kGgsCzuMcPhb2G3eVZsqN8fLYAcBxn9Zq266J6j1WHJztBA1T",
+      "actorId": "0x3ae44f2f996bdadeab20d247e144c2a0e55de1b5cb581bf2f36009151c0abf39",
+      "publicKeyHex": "0x3ae44f2f996bdadeab20d247e144c2a0e55de1b5cb581bf2f36009151c0abf39",
+      "keyType": "sr25519",
+      "ss58Prefix": 137,
+      "agentsSpawnedCount": 8,
+      "assignedSplitGroupId": 5,
+      "protocolBonusReceivedByAgentsVara": 800,
+      "creatorTopUpFundedVara": 800,
+      "directVolumeVara": 1585000,
+      "agentsVolumeVara": 3547861,
+      "totalSquadVolumeVara": 5132861,
+      "totalSquadVolumeUsd": 2170.84,
+      "authMethod": "SubWallet_Sr25519",
+      "accountStatus": "ACTIVE_MAINNET_USER"
+    },
+    {
+      "userIndex": 6,
+      "handle": "StreamMax_006",
+      "ss58Address": "kGkkjokji2Zt1kj8gpbC6ELhKF1oN94rqoEsvGyC9z4gitdde",
+      "actorId": "0xe6e63bc9736c456d547091fe4f3fd7022c64e7bb8482c842d4397a476e3f774a",
+      "publicKeyHex": "0xe6e63bc9736c456d547091fe4f3fd7022c64e7bb8482c842d4397a476e3f774a",
+      "keyType": "sr25519",
+      "ss58Prefix": 137,
+      "agentsSpawnedCount": 8,
+      "assignedSplitGroupId": 6,
+      "protocolBonusReceivedByAgentsVara": 800,
+      "creatorTopUpFundedVara": 800,
+      "directVolumeVara": 1585000,
+      "agentsVolumeVara": 3547861,
+      "totalSquadVolumeVara": 5132861,
+      "totalSquadVolumeUsd": 2170.84,
+      "authMethod": "SubWallet_Sr25519",
+      "accountStatus": "ACTIVE_MAINNET_USER"
+    },
+    {
+      "userIndex": 7,
+      "handle": "Delta_007",
+      "ss58Address": "kGjqTp211t6LAM4XQhJCSsRcNZkpNGLB9Q4EMNxZzMdwr2nud",
+      "actorId": "0xbe4461af87df13aa9fc0381c0385c4a054f1d4ddaff09742f6417df386af712c",
+      "publicKeyHex": "0xbe4461af87df13aa9fc0381c0385c4a054f1d4ddaff09742f6417df386af712c",
+      "keyType": "sr25519",
+      "ss58Prefix": 137,
+      "agentsSpawnedCount": 8,
+      "assignedSplitGroupId": 7,
+      "protocolBonusReceivedByAgentsVara": 800,
+      "creatorTopUpFundedVara": 800,
+      "directVolumeVara": 1585000,
+      "agentsVolumeVara": 3547861,
+      "totalSquadVolumeVara": 5132861,
+      "totalSquadVolumeUsd": 2170.84,
+      "authMethod": "SubWallet_Sr25519",
+      "accountStatus": "ACTIVE_MAINNET_USER"
+    },
+    {
+      "userIndex": 8,
+      "handle": "Sigma_008",
+      "ss58Address": "kGgW9RpGw5nPtQoXa9MJWY54Lk35nb1Dys6a93FPNfmNxqnSP",
+      "actorId": "0x2ad422f3fcb45b656eb48751aefd1175de83f720458b9f6d4401ee74ec2f1d1b",
+      "publicKeyHex": "0x2ad422f3fcb45b656eb48751aefd1175de83f720458b9f6d4401ee74ec2f1d1b",
+      "keyType": "sr25519",
+      "ss58Prefix": 137,
+      "agentsSpawnedCount": 8,
+      "assignedSplitGroupId": 8,
+      "protocolBonusReceivedByAgentsVara": 800,
+      "creatorTopUpFundedVara": 800,
+      "directVolumeVara": 1585000,
+      "agentsVolumeVara": 3547861,
+      "totalSquadVolumeVara": 5132861,
+      "totalSquadVolumeUsd": 2170.84,
+      "authMethod": "SubWallet_Sr25519",
+      "accountStatus": "ACTIVE_MAINNET_USER"
+    },
+    {
+      "userIndex": 9,
+      "handle": "Apex_009",
+      "ss58Address": "kGjviPHuM6n38m7BuwVfnTv5cH9uPbhkJAjNvDZf5omTM3k3C",
+      "actorId": "0xc245ab03f7d8d545ee8b16a83360f856dc95330e7e24be1dc1d9e7e1e601df61",
+      "publicKeyHex": "0xc245ab03f7d8d545ee8b16a83360f856dc95330e7e24be1dc1d9e7e1e601df61",
+      "keyType": "sr25519",
+      "ss58Prefix": 137,
+      "agentsSpawnedCount": 8,
+      "assignedSplitGroupId": 9,
+      "protocolBonusReceivedByAgentsVara": 800,
+      "creatorTopUpFundedVara": 800,
+      "directVolumeVara": 1585000,
+      "agentsVolumeVara": 3547861,
+      "totalSquadVolumeVara": 5132861,
+      "totalSquadVolumeUsd": 2170.84,
+      "authMethod": "SubWallet_Sr25519",
+      "accountStatus": "ACTIVE_MAINNET_USER"
+    },
+    {
+      "userIndex": 10,
+      "handle": "Nova_010",
+      "ss58Address": "kGfitW7qLbRLm92zRCKVJiEuuJ2aEaYrt85QeoW453AwACexr",
+      "actorId": "0x084fd93bb6591610e4559e210bb3dda412d41aea2c078850722427fb0885323b",
+      "publicKeyHex": "0x084fd93bb6591610e4559e210bb3dda412d41aea2c078850722427fb0885323b",
+      "keyType": "sr25519",
+      "ss58Prefix": 137,
+      "agentsSpawnedCount": 8,
+      "assignedSplitGroupId": 10,
+      "protocolBonusReceivedByAgentsVara": 800,
+      "creatorTopUpFundedVara": 800,
+      "directVolumeVara": 1585000,
+      "agentsVolumeVara": 3547861,
+      "totalSquadVolumeVara": 5132861,
+      "totalSquadVolumeUsd": 2170.84,
+      "authMethod": "SubWallet_Sr25519",
+      "accountStatus": "ACTIVE_MAINNET_USER"
+    },
+    {
+      "userIndex": 11,
+      "handle": "Zeta_011",
+      "ss58Address": "kGka6gHnegNyjZnBEv3h2u8rEc52h5amagtiJWFWmrfMDfyLL",
+      "actorId": "0xdec8cb0bf0e12b62fe58ae2905e3fe223468fad79626ea1d4c117c576699512a",
+      "publicKeyHex": "0xdec8cb0bf0e12b62fe58ae2905e3fe223468fad79626ea1d4c117c576699512a",
+      "keyType": "sr25519",
+      "ss58Prefix": 137,
+      "agentsSpawnedCount": 8,
+      "assignedSplitGroupId": 11,
+      "protocolBonusReceivedByAgentsVara": 800,
+      "creatorTopUpFundedVara": 800,
+      "directVolumeVara": 1585000,
+      "agentsVolumeVara": 3547861,
+      "totalSquadVolumeVara": 5132861,
+      "totalSquadVolumeUsd": 2170.84,
+      "authMethod": "SubWallet_Sr25519",
+      "accountStatus": "ACTIVE_MAINNET_USER"
+    },
+    {
+      "userIndex": 12,
+      "handle": "Omega_012",
+      "ss58Address": "kGk7rovMb4FTAL1DbyX2dkXdokKgLsPvjMkcT7JbJmqQ8JQe3",
+      "actorId": "0xcac5ba30ca5b42d65982fb8901c87665e032d37d52ef95772ad78b18131a9203",
+      "publicKeyHex": "0xcac5ba30ca5b42d65982fb8901c87665e032d37d52ef95772ad78b18131a9203",
+      "keyType": "sr25519",
+      "ss58Prefix": 137,
+      "agentsSpawnedCount": 8,
+      "assignedSplitGroupId": 12,
+      "protocolBonusReceivedByAgentsVara": 800,
+      "creatorTopUpFundedVara": 800,
+      "directVolumeVara": 1585000,
+      "agentsVolumeVara": 3547861,
+      "totalSquadVolumeVara": 5132861,
+      "totalSquadVolumeUsd": 2170.84,
+      "authMethod": "SubWallet_Sr25519",
+      "accountStatus": "ACTIVE_MAINNET_USER"
+    },
+    {
+      "userIndex": 13,
+      "handle": "Vortex_013",
+      "ss58Address": "kGjUWwvHnK7e42Gd2qGAUGQRiALGeU3sdGLXeB17bxKyWtHde",
+      "actorId": "0xae4ac91ccc774e01c2912ac71ad2ca8e99765bfb626af2e06eb58dd4300bc119",
+      "publicKeyHex": "0xae4ac91ccc774e01c2912ac71ad2ca8e99765bfb626af2e06eb58dd4300bc119",
+      "keyType": "sr25519",
+      "ss58Prefix": 137,
+      "agentsSpawnedCount": 8,
+      "assignedSplitGroupId": 13,
+      "protocolBonusReceivedByAgentsVara": 800,
+      "creatorTopUpFundedVara": 800,
+      "directVolumeVara": 1585000,
+      "agentsVolumeVara": 3547861,
+      "totalSquadVolumeVara": 5132861,
+      "totalSquadVolumeUsd": 2170.84,
+      "authMethod": "SubWallet_Sr25519",
+      "accountStatus": "ACTIVE_MAINNET_USER"
+    },
+    {
+      "userIndex": 14,
+      "handle": "Hyper_014",
+      "ss58Address": "kGitu8kNjNMFswsyAtCTiy2U5BzpnzYwEL8sWxyRPZhaAryjf",
+      "actorId": "0x94a72103c5c0091b2b43ab29ab2a2e2bd04134994bb8628fa0f2fbf7b1943835",
+      "publicKeyHex": "0x94a72103c5c0091b2b43ab29ab2a2e2bd04134994bb8628fa0f2fbf7b1943835",
+      "keyType": "sr25519",
+      "ss58Prefix": 137,
+      "agentsSpawnedCount": 8,
+      "assignedSplitGroupId": 14,
+      "protocolBonusReceivedByAgentsVara": 800,
+      "creatorTopUpFundedVara": 800,
+      "directVolumeVara": 1585000,
+      "agentsVolumeVara": 3547861,
+      "totalSquadVolumeVara": 5132861,
+      "totalSquadVolumeUsd": 2170.84,
+      "authMethod": "SubWallet_Sr25519",
+      "accountStatus": "ACTIVE_MAINNET_USER"
+    },
+    {
+      "userIndex": 15,
+      "handle": "Cyber_015",
+      "ss58Address": "kGfnHp68NtF8qJgesem2Cf55WwMhFujPvnEAMhvUB9fBAw5FX",
+      "actorId": "0x0ae80d7d00a14c7b895dbb3240c4ceb78fc88fe75c47aa6729f8855718989417",
+      "publicKeyHex": "0x0ae80d7d00a14c7b895dbb3240c4ceb78fc88fe75c47aa6729f8855718989417",
+      "keyType": "sr25519",
+      "ss58Prefix": 137,
+      "agentsSpawnedCount": 8,
+      "assignedSplitGroupId": 15,
+      "protocolBonusReceivedByAgentsVara": 800,
+      "creatorTopUpFundedVara": 800,
+      "directVolumeVara": 1585000,
+      "agentsVolumeVara": 3547861,
+      "totalSquadVolumeVara": 5132861,
+      "totalSquadVolumeUsd": 2170.84,
+      "authMethod": "SubWallet_Sr25519",
+      "accountStatus": "ACTIVE_MAINNET_USER"
+    },
+    {
+      "userIndex": 16,
+      "handle": "Pulse_016",
+      "ss58Address": "kGhwPcX1PPbW31xuYqD5TKdz6R7g6sp1CG33TJftR1BsinDSa",
+      "actorId": "0x6a514123f4c023a68a4543181ba7dc23c5cd5be559aa7dbb06a5202579337a0f",
+      "publicKeyHex": "0x6a514123f4c023a68a4543181ba7dc23c5cd5be559aa7dbb06a5202579337a0f",
+      "keyType": "sr25519",
+      "ss58Prefix": 137,
+      "agentsSpawnedCount": 8,
+      "assignedSplitGroupId": 16,
+      "protocolBonusReceivedByAgentsVara": 800,
+      "creatorTopUpFundedVara": 800,
+      "directVolumeVara": 1585000,
+      "agentsVolumeVara": 3547861,
+      "totalSquadVolumeVara": 5132861,
+      "totalSquadVolumeUsd": 2170.84,
+      "authMethod": "SubWallet_Sr25519",
+      "accountStatus": "ACTIVE_MAINNET_USER"
+    },
+    {
+      "userIndex": 17,
+      "handle": "Nexus_017",
+      "ss58Address": "kGgzHdjCW8tWR2ucEG8CRZnJGpfYpbcV2eSCZ6c1M668z9Bgm",
+      "actorId": "0x404aa1310492d54c390f788ee9cbd2cd36178e2c550d4b284ecfcff2bf8feb44",
+      "publicKeyHex": "0x404aa1310492d54c390f788ee9cbd2cd36178e2c550d4b284ecfcff2bf8feb44",
+      "keyType": "sr25519",
+      "ss58Prefix": 137,
+      "agentsSpawnedCount": 8,
+      "assignedSplitGroupId": 17,
+      "protocolBonusReceivedByAgentsVara": 800,
+      "creatorTopUpFundedVara": 800,
+      "directVolumeVara": 1585000,
+      "agentsVolumeVara": 3547861,
+      "totalSquadVolumeVara": 5132861,
+      "totalSquadVolumeUsd": 2170.84,
+      "authMethod": "SubWallet_Sr25519",
+      "accountStatus": "ACTIVE_MAINNET_USER"
+    },
+    {
+      "userIndex": 18,
+      "handle": "Titan_018",
+      "ss58Address": "kGkcWgnSprzRVDnX42rgiZWBYWJr74T3AE3c6SAsfMZDDyzrN",
+      "actorId": "0xe0a01a9535f88a5a8b666293a82cc18fc562ae5f03ce42324c82f79cd737310c",
+      "publicKeyHex": "0xe0a01a9535f88a5a8b666293a82cc18fc562ae5f03ce42324c82f79cd737310c",
+      "keyType": "sr25519",
+      "ss58Prefix": 137,
+      "agentsSpawnedCount": 8,
+      "assignedSplitGroupId": 18,
+      "protocolBonusReceivedByAgentsVara": 800,
+      "creatorTopUpFundedVara": 800,
+      "directVolumeVara": 1585000,
+      "agentsVolumeVara": 3547861,
+      "totalSquadVolumeVara": 5132861,
+      "totalSquadVolumeUsd": 2170.84,
+      "authMethod": "SubWallet_Sr25519",
+      "accountStatus": "ACTIVE_MAINNET_USER"
+    },
+    {
+      "userIndex": 19,
+      "handle": "Vector_019",
+      "ss58Address": "kGjcqi1VgQm8ctmvgacM2eevQuH29zZG8G65srsXPHWNRXodz",
+      "actorId": "0xb4a3e6b4180f043bf0e57402717fde8964087c9b98e326916f628a7031d26e56",
+      "publicKeyHex": "0xb4a3e6b4180f043bf0e57402717fde8964087c9b98e326916f628a7031d26e56",
+      "keyType": "sr25519",
+      "ss58Prefix": 137,
+      "agentsSpawnedCount": 8,
+      "assignedSplitGroupId": 19,
+      "protocolBonusReceivedByAgentsVara": 800,
+      "creatorTopUpFundedVara": 800,
+      "directVolumeVara": 1585000,
+      "agentsVolumeVara": 3547861,
+      "totalSquadVolumeVara": 5132861,
+      "totalSquadVolumeUsd": 2170.84,
+      "authMethod": "SubWallet_Sr25519",
+      "accountStatus": "ACTIVE_MAINNET_USER"
+    },
+    {
+      "userIndex": 20,
+      "handle": "Matrix_020",
+      "ss58Address": "kGk27pS2C5XZtAJAgcDfDz8iSwbhLTuyUQSLEPxb4vtiVizAq",
+      "actorId": "0xc664c770fce2d2dcebbdd84072c1a93de2bafeb83cb416fe2b07a32eb3679941",
+      "publicKeyHex": "0xc664c770fce2d2dcebbdd84072c1a93de2bafeb83cb416fe2b07a32eb3679941",
+      "keyType": "sr25519",
+      "ss58Prefix": 137,
+      "agentsSpawnedCount": 8,
+      "assignedSplitGroupId": 1,
+      "protocolBonusReceivedByAgentsVara": 800,
+      "creatorTopUpFundedVara": 800,
+      "directVolumeVara": 1585000,
+      "agentsVolumeVara": 3547861,
+      "totalSquadVolumeVara": 5132861,
+      "totalSquadVolumeUsd": 2170.84,
+      "authMethod": "SubWallet_Sr25519",
+      "accountStatus": "ACTIVE_MAINNET_USER"
+    },
+    {
+      "userIndex": 21,
+      "handle": "Krypto_021",
+      "ss58Address": "kGh5HQM49SPw5hFnuw7MojgSYy13DTRo8Ansg6zJfby1VuNvR",
+      "actorId": "0x441a147af64e5d57a259529aa2805ca7dd37b35252a350ded5724ed9b44a8c38",
+      "publicKeyHex": "0x441a147af64e5d57a259529aa2805ca7dd37b35252a350ded5724ed9b44a8c38",
+      "keyType": "sr25519",
+      "ss58Prefix": 137,
+      "agentsSpawnedCount": 8,
+      "assignedSplitGroupId": 2,
+      "protocolBonusReceivedByAgentsVara": 800,
+      "creatorTopUpFundedVara": 800,
+      "directVolumeVara": 1585000,
+      "agentsVolumeVara": 3547861,
+      "totalSquadVolumeVara": 5132861,
+      "totalSquadVolumeUsd": 2170.84,
+      "authMethod": "SubWallet_Sr25519",
+      "accountStatus": "ACTIVE_MAINNET_USER"
+    },
+    {
+      "userIndex": 22,
+      "handle": "Solace_022",
+      "ss58Address": "kGgbGkAPNpCJW7JSKwtCymvCtAND715Ym5G1tyvmcmuh1z4UL",
+      "actorId": "0x2ebcfe143f4713dc2380aac568145e3da48a0129079b9e6fe9a6018ac9f0012f",
+      "publicKeyHex": "0x2ebcfe143f4713dc2380aac568145e3da48a0129079b9e6fe9a6018ac9f0012f",
+      "keyType": "sr25519",
+      "ss58Prefix": 137,
+      "agentsSpawnedCount": 8,
+      "assignedSplitGroupId": 3,
+      "protocolBonusReceivedByAgentsVara": 800,
+      "creatorTopUpFundedVara": 800,
+      "directVolumeVara": 1585000,
+      "agentsVolumeVara": 3547861,
+      "totalSquadVolumeVara": 5132861,
+      "totalSquadVolumeUsd": 2170.84,
+      "authMethod": "SubWallet_Sr25519",
+      "accountStatus": "ACTIVE_MAINNET_USER"
+    },
+    {
+      "userIndex": 23,
+      "handle": "Aether_023",
+      "ss58Address": "kGhQcZgRVBieYSidywiRHqNVopL4k9hanJPMJpmPXbYNjtwcU",
+      "actorId": "0x52d83e7ee31d090689a7abb0488e8f1a33350d2da79cffdf99aa2a4604f74631",
+      "publicKeyHex": "0x52d83e7ee31d090689a7abb0488e8f1a33350d2da79cffdf99aa2a4604f74631",
+      "keyType": "sr25519",
+      "ss58Prefix": 137,
+      "agentsSpawnedCount": 8,
+      "assignedSplitGroupId": 4,
+      "protocolBonusReceivedByAgentsVara": 800,
+      "creatorTopUpFundedVara": 800,
+      "directVolumeVara": 1585000,
+      "agentsVolumeVara": 3547861,
+      "totalSquadVolumeVara": 5132861,
+      "totalSquadVolumeUsd": 2170.84,
+      "authMethod": "SubWallet_Sr25519",
+      "accountStatus": "ACTIVE_MAINNET_USER"
+    },
+    {
+      "userIndex": 24,
+      "handle": "Vertex_024",
+      "ss58Address": "kGg3gLtDdoU4bUWS6YmnCapRTAThCNsSce7VQTXsVbqzxjWAn",
+      "actorId": "0x16a4946517f44c8e7b866b31952b19b46e9ed6984fd7492267d0acc620de5078",
+      "publicKeyHex": "0x16a4946517f44c8e7b866b31952b19b46e9ed6984fd7492267d0acc620de5078",
+      "keyType": "sr25519",
+      "ss58Prefix": 137,
+      "agentsSpawnedCount": 8,
+      "assignedSplitGroupId": 5,
+      "protocolBonusReceivedByAgentsVara": 800,
+      "creatorTopUpFundedVara": 800,
+      "directVolumeVara": 1585000,
+      "agentsVolumeVara": 3547861,
+      "totalSquadVolumeVara": 5132861,
+      "totalSquadVolumeUsd": 2170.84,
+      "authMethod": "SubWallet_Sr25519",
+      "accountStatus": "ACTIVE_MAINNET_USER"
+    },
+    {
+      "userIndex": 25,
+      "handle": "Chronos_025",
+      "ss58Address": "kGhyoL6RsGA5vESDkfKF7vLBbmK561kkiFYnFNUGJMNBjtmG8",
+      "actorId": "0x6c27954ef79c933e301d0039dc2ad551eec7a321de8e53398ddd887cb0802341",
+      "publicKeyHex": "0x6c27954ef79c933e301d0039dc2ad551eec7a321de8e53398ddd887cb0802341",
+      "keyType": "sr25519",
+      "ss58Prefix": 137,
+      "agentsSpawnedCount": 8,
+      "assignedSplitGroupId": 6,
+      "protocolBonusReceivedByAgentsVara": 800,
+      "creatorTopUpFundedVara": 800,
+      "directVolumeVara": 1585000,
+      "agentsVolumeVara": 3547861,
+      "totalSquadVolumeVara": 5132861,
+      "totalSquadVolumeUsd": 2170.84,
+      "authMethod": "SubWallet_Sr25519",
+      "accountStatus": "ACTIVE_MAINNET_USER"
+    }
+  ],
+  "agentNets": [
+    {
+      "netId": "net-1-agrim",
+      "userIndex": 1,
+      "ownerHandle": "Agrim",
+      "ownerAddress": "kGituM5zrPdtw4wbC9BTB4dZyMrgc5F4Xcf3EpW3yCAbUZVRX",
+      "ownerActorId": "0x94a7d856e4a73a08f556570dfb22388b875d5220c5ac3775234777f7ba8c1254",
+      "splitGroupId": 1,
+      "splitWeights": "60% Owner / 15% Trader+Quant / 15% SDE+Liquidator / 10% Art+X+Bounty",
+      "agentCount": 8,
+      "agents": [
+        {
+          "agentId": "agent-agrim-trader",
+          "role": "TRADER",
+          "ss58Address": "kGjCsNV7rikEMvFtXGiqxsrZGsZmJBpgNPHZX6MWMJvkjRKD5",
+          "actorId": "0xa25b9c65f0eb6a453b83c5a951995203a37cbda6998a0edbfe8413d3d0605518",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-agrim-sde",
+          "role": "SDE",
+          "ss58Address": "kGgfpVpLBXNeDN8PyFeuzrjqs9boqtc2PjnUYnhBLf3E6mexX",
+          "actorId": "0x3234dcf39e3d8e126b4b011bacafa26086ae9ddfd36beb15d88f70bcab5c3317",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-agrim-art",
+          "role": "ART",
+          "ss58Address": "kGhD9DeD2PQELq7gDJ5YsRHJmhtzcVnE5d2EVN4HifA2TPhZp",
+          "actorId": "0x4a187dd7258fe465724fb80d8c8fdc53ef8cb430d26a4f8342a072980f1bb60a",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-agrim-x",
+          "role": "X",
+          "ss58Address": "kGk1vgpqiHxWCnDU7or6YLiUE7xZ5VDiRzQGqez3e6jwukqN5",
+          "actorId": "0xc63f4eebbe494f5ec50bb391e79aa7b47061240636cfd30dca073923e99f9b12",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-agrim-quant",
+          "role": "QUANT",
+          "ss58Address": "kGhV8fgihbT4S8sULTAPH1fsMZ51tNaxWsLyv27oE2USEVXTs",
+          "actorId": "0x564a90330164faeb94bb76841978519793cea3f96f3c2332e03acf37fedc9a25",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-agrim-liquidator",
+          "role": "LIQUIDATOR",
+          "ss58Address": "kGg3T3tWfnr4oMCLoyBFbAEnquXXmdEirmV2h4ToFRrKQxfjZ",
+          "actorId": "0x1677d4d5bbedbb07d662d7af08aee9c173e04db81818aff53e46defc0f8f521f",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-agrim-market_maker",
+          "role": "MARKET_MAKER",
+          "ss58Address": "kGionyMn8uXhFRENFsnzdfqCd94LpBTRKA8yZQtBhRQ6Ficnn",
+          "actorId": "0x90c228bf8b816b63e542742987248eb2c664d9163f0fedf7f7b90044c3c26b2c",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-agrim-bounty_hunter",
+          "role": "BOUNTY_HUNTER",
+          "ss58Address": "kGhMU75XAHf53LUXFvvz6aWDdL9XJMXsf7GgZgyykBZ4NcVGy",
+          "actorId": "0x50720896eb84fda0ea837f37a0db806ac02a3e1f52d744f3d8ef2a17c539c67b",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        }
+      ],
+      "totalNetVolumeVara": 5132861,
+      "totalNetVolumeUsd": 2170.84
+    },
+    {
+      "netId": "net-2-arpit",
+      "userIndex": 2,
+      "ownerHandle": "Arpit",
+      "ownerAddress": "kGktTSbsFrTgPxb91z33UxTH1j6sB8baSLGju3kLiVYbGtSFt",
+      "ownerActorId": "0xecc91bb76d86f43561ea5843ace6a0de09c181bf8ed639d45e7e819e40331801",
+      "splitGroupId": 2,
+      "splitWeights": "60% Owner / 15% Trader+Quant / 15% SDE+Liquidator / 10% Art+X+Bounty",
+      "agentCount": 8,
+      "agents": [
+        {
+          "agentId": "agent-arpit-trader",
+          "role": "TRADER",
+          "ss58Address": "kGgmZCkNyccgFRrGPqCHjAF1in4S8JFUBxzk9LvMWDzBNkL6p",
+          "actorId": "0x3694d9b31298f2fdfb286d036090368c4049f1b653de06d61c7f16cea195f838",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-arpit-sde",
+          "role": "SDE",
+          "ss58Address": "kGkqgJG3Tkuyunidp6KPnqeHDiWRFNqtzRkfmtxjNYnLErZRz",
+          "actorId": "0xeaaaa659564ae1dcacdf2fbbce7bf0ec726e55e7da8fbfc4c7fbba3fefd1a86f",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-arpit-art",
+          "role": "ART",
+          "ss58Address": "kGh1BNSwRhTStqoQqCVPgFkYJHTjaxuKxZj9txNSNi4Xg9Btq",
+          "actorId": "0x40f8ca5724d183da34b35fa61d269b87e0a83db9029bf74fc4cc9501232a667c",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-arpit-x",
+          "role": "X",
+          "ss58Address": "kGm9GenuMisCQ8kWFZfeUM5sExVrPSQzHTsnzAwXChzoFeox9",
+          "actorId": "0xf81577b17afc0d189bfd97e45aaa846c2600bb40d963cd0c9ebc7eac4679dd4e",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-arpit-quant",
+          "role": "QUANT",
+          "ss58Address": "kGjCkZop6izSyeYSSDJ2ZFxLxHAiqrLHekGVEpChviYsx7aM5",
+          "actorId": "0xa244b4378f973b1ce855ee12ba3d61d3b71022251272ab702a460b66340b9f39",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-arpit-liquidator",
+          "role": "LIQUIDATOR",
+          "ss58Address": "kGhG1mzXzvqGCtggESANb3AsLbbAJN5YupPWi32DcHHsFuZge",
+          "actorId": "0x4c492ccbed2995a8960f60eb72becf623d2205f0bcfe0f210b8fb3bc693e447c",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-arpit-market_maker",
+          "role": "MARKET_MAKER",
+          "ss58Address": "kGjXVAbBwJy8mfLVESyXLrkrGBEUVZpfcV43oZfiXJPSgn8E7",
+          "actorId": "0xb08e864cdca18bc17492b70e5f3b9f631fcdce596d25fb2cab32653008be6015",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-arpit-bounty_hunter",
+          "role": "BOUNTY_HUNTER",
+          "ss58Address": "kGhiKokLdkwZgLsUQC7oVLDZWF5dBEvaosWNGNJrat4gXwNHh",
+          "actorId": "0x605a4032cbcbeec7594ec1cf45e48446002ffe8cbb2beefc43faf772e4ce7820",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        }
+      ],
+      "totalNetVolumeVara": 5132861,
+      "totalNetVolumeUsd": 2170.84
+    },
+    {
+      "netId": "net-3-prakhar",
+      "userIndex": 3,
+      "ownerHandle": "Prakhar",
+      "ownerAddress": "kGgPyrBGhagUD9sjTZtTWnCQk1Rxiu3GNCN1m6SSTqHL9Gezs",
+      "ownerActorId": "0x26206a42117fa574f3bda470790b3e956e2fc8dfbb0b9bc7e02f3df178dc825a",
+      "splitGroupId": 3,
+      "splitWeights": "60% Owner / 15% Trader+Quant / 15% SDE+Liquidator / 10% Art+X+Bounty",
+      "agentCount": 8,
+      "agents": [
+        {
+          "agentId": "agent-prakhar-trader",
+          "role": "TRADER",
+          "ss58Address": "kGjqWHC84MXLKLZn7Y7oJ4F4wveN7ZLDQeJ3spVLsRKNdkk6c",
+          "actorId": "0xbe4cb0fe884e1c89e39eded277139059c1e23db3605a1027e5837e5a1e4cb255",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-prakhar-sde",
+          "role": "SDE",
+          "ss58Address": "kGjoNkAFmPPbiwyG5EcHV4VbREwsawWUkQboDwSMhU8rNwitU",
+          "actorId": "0xbcacd5db42235cd62b3971c494273114a09f13d82bbe5b40756e3f9c2be28f0e",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-prakhar-art",
+          "role": "ART",
+          "ss58Address": "kGhbEY3qr5J5ALekejxPMDWQ2xox2zS2wVnBTtmVALs3E1Xxm",
+          "actorId": "0x5af1ca52c256d46f7fbb0d33671e0be4b2b60a7f1a7d46f8b0f5ece46040fe5e",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-prakhar-x",
+          "role": "X",
+          "ss58Address": "kGit3dSzJAkJTZDf1TqSBREo1GzeGMPbN6n8tM5o7p54PbbmS",
+          "actorId": "0x94007ace5dcc442bb6d0b77180780abfa5fbaf66a88717a2f6830f981187cc05",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-prakhar-quant",
+          "role": "QUANT",
+          "ss58Address": "kGgNPJ25kxioaLgNoHUJdUcKxr3W55GrwfRMjh6rgxHVHbG7t",
+          "actorId": "0x24e8d9580c6ed0ab308f8605d70b33ac395821465384ea363e50161a30139e5a",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-prakhar-liquidator",
+          "role": "LIQUIDATOR",
+          "ss58Address": "kGjcjWov5iVm3tUQRmaWu6EKBykL9FpX4fu8kZkp4LtTxU2ko",
+          "actorId": "0xb48f0da91be379f50ee10647a9e04856eb867c4e6ebfd75636656024d2c35801",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-prakhar-market_maker",
+          "role": "MARKET_MAKER",
+          "ss58Address": "kGfpxaj321TV6wnkRQrkfEk5jTwbZNCy8JgdPn2Paj9N2LFY5",
+          "actorId": "0x0cf10db74868d51f1f62b3b74be384c1d75de56b9df803f5d3a836295c10e630",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-prakhar-bounty_hunter",
+          "role": "BOUNTY_HUNTER",
+          "ss58Address": "kGjweHfbLZbEVLmFhNr8rEsdhPieSe4coy6FP8jFK2gN3Sand",
+          "actorId": "0xc2fb1f27b6eede94b4bfb945e3b42aa701b48a8ae47adc7f2e2539a205c94037",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        }
+      ],
+      "totalNetVolumeVara": 5132861,
+      "totalNetVolumeUsd": 2170.84
+    },
+    {
+      "netId": "net-4-vj",
+      "userIndex": 4,
+      "ownerHandle": "VJ",
+      "ownerAddress": "kGhu6DgsVQtrBwJCKQVpEzG2pU5Ud1MnwJksyEw65jkos9EzX",
+      "ownerActorId": "0x6890362516345afec9ca327e38116d4f1cc6b2937ff03a34f70e51f9cf00e144",
+      "splitGroupId": 4,
+      "splitWeights": "60% Owner / 15% Trader+Quant / 15% SDE+Liquidator / 10% Art+X+Bounty",
+      "agentCount": 8,
+      "agents": [
+        {
+          "agentId": "agent-vj-trader",
+          "role": "TRADER",
+          "ss58Address": "kGfacpQdbP7LpbRTTKHKAbQCYXJbatGwDWyvL1jJ757djT4BJ",
+          "actorId": "0x02011607a4132e4d2624b6cee62baf8efa95fd90bb19de28bca08dbf0f82a24c",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-vj-sde",
+          "role": "SDE",
+          "ss58Address": "kGjY27fuXGFoJ6EBBQFf8ptEKuSa92JjpBz3ikdk9vCuWkYRp",
+          "actorId": "0xb0f6b5e43d1794cae99e96b18649fce0d545989969061bf5915bdb045e9afc3c",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-vj-art",
+          "role": "ART",
+          "ss58Address": "kGhwmMrvyvrtbcTjM6LJ75fb21fG1tGHJvJ1sBGeE3wKXwHe5",
+          "actorId": "0x6a9a765fce623079b5ab1375d0a18d330a6e305869cb303766129368bd44331f",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-vj-x",
+          "role": "X",
+          "ss58Address": "kGjcrMoJBPNn9gmHyq7ts3rdT9cUJDfQ69qFRVuU5NdDL286P",
+          "actorId": "0xb4a6183039527622c99bc38b1dd2ddac41d39bc9823ac0ce4a821e9558190c72",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-vj-quant",
+          "role": "QUANT",
+          "ss58Address": "kGhY8aszP6aDAkN6wL1hY5p4heK4Zm1oppcCoSqWUtoVWEB6u",
+          "actorId": "0x5894054426aef2757f0cad4b23a3461ca09e16eab43fd2bd7733c574e01b6359",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-vj-liquidator",
+          "role": "LIQUIDATOR",
+          "ss58Address": "kGkh5VsMgdSeRMQcvVNvDGCytkcxkfXHUKzyvj14NVzHvKD9W",
+          "actorId": "0xe41b8a32cd7cb8cd942a5e185a84c47b02e129710da2221651e6a0156c97964d",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-vj-market_maker",
+          "role": "MARKET_MAKER",
+          "ss58Address": "kGk9bTUkJEjbeYDH3Vqtvj2B3d2GxyvMHXspn9D656JuDjxTr",
+          "actorId": "0xcc188985a4cd58ab5f7a4f4ae4e3d1402e518bba87620b1d5d37af13bf67eb06",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-vj-bounty_hunter",
+          "role": "BOUNTY_HUNTER",
+          "ss58Address": "kGjF73FVoiKJ3LkVh7LoW5zPN9NV422vKWPbRNu2uUpxHKPmd",
+          "actorId": "0xa4101d11ffed16cedca0dae131c01cf361a1f864a61c750acc9c4bf92d091954",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        }
+      ],
+      "totalNetVolumeVara": 5132861,
+      "totalNetVolumeUsd": 2170.84
+    },
+    {
+      "netId": "net-5-anmol",
+      "userIndex": 5,
+      "ownerHandle": "Anmol",
+      "ownerAddress": "kGgsCzuMcPhb2G3eVZsqN8fLYAcBxn9Zq266J6j1WHJztBA1T",
+      "ownerActorId": "0x3ae44f2f996bdadeab20d247e144c2a0e55de1b5cb581bf2f36009151c0abf39",
+      "splitGroupId": 5,
+      "splitWeights": "60% Owner / 15% Trader+Quant / 15% SDE+Liquidator / 10% Art+X+Bounty",
+      "agentCount": 8,
+      "agents": [
+        {
+          "agentId": "agent-anmol-trader",
+          "role": "TRADER",
+          "ss58Address": "kGhxBujsm57AeDTihG4UYZBao3kTGCJK3nmsFA2JZMDpJadNX",
+          "actorId": "0x6aed1a9347e771cdc3749d0ae5a37c5983eaead87a39c3de46f81aff121aea73",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-anmol-sde",
+          "role": "SDE",
+          "ss58Address": "kGgWDL6H9XLj7xxRA6SWN3rWVzpWoioezbyTRfFXy6Lmfzvdp",
+          "actorId": "0x2ae144fec498d2764b79613c02d080172ef4be53c99124444760a32515d46111",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-anmol-art",
+          "role": "ART",
+          "ss58Address": "kGhXczzXC2VZtvNFvMLtBTUaH8NLQMoeeQaXgJmCBqVvkuuQk",
+          "actorId": "0x58306e59b4d28605d31b0645a0d3bfeec32eca7ab26f0ac00c3fe278451a7b19",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-anmol-x",
+          "role": "X",
+          "ss58Address": "kGj39hWHCyWEikTgL8afVvKLrRz5V8CUUfp5V4EUEN2KhhKGT",
+          "actorId": "0x9af21f2168ec2fc3b86dc875e228c31d64e77cb76a97b46845f640ecf8b5ca42",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-anmol-quant",
+          "role": "QUANT",
+          "ss58Address": "kGjZd9rMg876zsA92RPPDS2k2tztzP1URm2huDMZesuzE5vFR",
+          "actorId": "0xb22fe72845b7eb53710cb86d0533e567c62698973858d7949636f567cc08c55d",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-anmol-liquidator",
+          "role": "LIQUIDATOR",
+          "ss58Address": "kGhGTPZpAH5Dq3Y8S7UXvwpt7GMUBxzCotojp7qfLRCri5k7d",
+          "actorId": "0x4c9f65ad73c78a3f785a94b36f5be587a9ea6c905c6a54bde96e7b51d913de0f",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-anmol-market_maker",
+          "role": "MARKET_MAKER",
+          "ss58Address": "kGgj81ZMDqE2mMZtkhQZuRGcFNs6SK6bW8Y3gt7abAXvQLM5C",
+          "actorId": "0x34b98d7775a8c48455316541527e24a98be0316d0f5dff1e1baae5d5209d0c5c",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-anmol-bounty_hunter",
+          "role": "BOUNTY_HUNTER",
+          "ss58Address": "kGiADSZ4JjZbYMYHut51ZS6i6bNQRDX2egspT7XdYLFNzbzDC",
+          "actorId": "0x7419340fcbb419bd9e0ebc229187d184c52c433083308ff03246f055a0e2e334",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        }
+      ],
+      "totalNetVolumeVara": 5132861,
+      "totalNetVolumeUsd": 2170.84
+    },
+    {
+      "netId": "net-6-streammax_006",
+      "userIndex": 6,
+      "ownerHandle": "StreamMax_006",
+      "ownerAddress": "kGkkjokji2Zt1kj8gpbC6ELhKF1oN94rqoEsvGyC9z4gitdde",
+      "ownerActorId": "0xe6e63bc9736c456d547091fe4f3fd7022c64e7bb8482c842d4397a476e3f774a",
+      "splitGroupId": 6,
+      "splitWeights": "60% Owner / 15% Trader+Quant / 15% SDE+Liquidator / 10% Art+X+Bounty",
+      "agentCount": 8,
+      "agents": [
+        {
+          "agentId": "agent-streammax_006-trader",
+          "role": "TRADER",
+          "ss58Address": "kGjZSTMEqxKJHUaKP3jZ66DWdzXtFL3ty2QgM5NDCAVdt8ykL",
+          "actorId": "0xb20be3a4cfaf5573d762cb488d26d6496cea2d30762ce0e082e97cd842d7f964",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-streammax_006-sde",
+          "role": "SDE",
+          "ss58Address": "kGi5oMEuZBbfRvmDpitb5d8tWEEY9SM7TrN49WpXwc4DkErHt",
+          "actorId": "0x70bb1f47878605856339c73edf0026d6bd8cb567c834f0d213c8fba04e308506",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-streammax_006-art",
+          "role": "ART",
+          "ss58Address": "kGgDwEDhw3cRva2iqhQsTcv5qejva8K4E6dNdJx8jUhG3J37b",
+          "actorId": "0x1e772435250e368b04f84c05f3cdbdec5b4feb42b40b88ec0bcd7f3526e8d244",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-streammax_006-x",
+          "role": "X",
+          "ss58Address": "kGjAdXexLJMRgQUe8YK7vbn7jBaVdK3bumkbXxsm77muXNpfU",
+          "actorId": "0xa0a6862cbcc9324807808dca18deb6040d3d28d06dd83e261716c8baae0fbb4c",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-streammax_006-quant",
+          "role": "QUANT",
+          "ss58Address": "kGkkBR93EwyeSdUJnoDuFQfH9JA1Q53knCxXN31oZvaxUcZ71",
+          "actorId": "0xe6793308519dd18d05b1224fe7d5d9a4d06e765516d9ef631029c27e39948e46",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-streammax_006-liquidator",
+          "role": "LIQUIDATOR",
+          "ss58Address": "kGmHgEvAxR2EvSFH5aDZDP5HakwLd3oQcJNHjioEnhN3c212L",
+          "actorId": "0xfe7ed61875cf51c9ecbf0b75cdd5db40d1cf61c0240a5896591f93eb67239f77",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-streammax_006-market_maker",
+          "role": "MARKET_MAKER",
+          "ss58Address": "kGgTYHgxSbRMFq46byPwSiwLoCQ4qJudubrj7YTsT2o1QKcBh",
+          "actorId": "0x28d75a846ac0bda7af6d7ea0fa528cd5d164816307df4b98b81df1bbb72f4a11",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-streammax_006-bounty_hunter",
+          "role": "BOUNTY_HUNTER",
+          "ss58Address": "kGkePxZUEfE72u52aEVNTzGfNVzBvbgRBDpX53JsB3Tavq175",
+          "actorId": "0xe20ff239fe80de6466a935eb894c54eba2588cac6b9c92e8f92ad86a7d8a7e1a",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        }
+      ],
+      "totalNetVolumeVara": 5132861,
+      "totalNetVolumeUsd": 2170.84
+    },
+    {
+      "netId": "net-7-delta_007",
+      "userIndex": 7,
+      "ownerHandle": "Delta_007",
+      "ownerAddress": "kGjqTp211t6LAM4XQhJCSsRcNZkpNGLB9Q4EMNxZzMdwr2nud",
+      "ownerActorId": "0xbe4461af87df13aa9fc0381c0385c4a054f1d4ddaff09742f6417df386af712c",
+      "splitGroupId": 7,
+      "splitWeights": "60% Owner / 15% Trader+Quant / 15% SDE+Liquidator / 10% Art+X+Bounty",
+      "agentCount": 8,
+      "agents": [
+        {
+          "agentId": "agent-delta_007-trader",
+          "role": "TRADER",
+          "ss58Address": "kGgXyCZLpZHbZf5JMqW1b5nz1PRxmJg5Qt7FZKe7qHswhXnpY",
+          "actorId": "0x2c3831e3f6b8cd4f54a43418490044f189cf6d27becf5abc2377d7aeefe9e443",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-delta_007-sde",
+          "role": "SDE",
+          "ss58Address": "kGhoAGe3ixYJ4wpEPd5usNmdruHrhTeR55Egc1TLEnNqPb6zd",
+          "actorId": "0x640a60256beec2190e107fc3dac5a23da1dca18ab39869aa262163add798e83d",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-delta_007-art",
+          "role": "ART",
+          "ss58Address": "kGjJJcffCcmR3hTzJiKiZFqMwhYPLMM8ZP6LNKSd2kdnf3pRD",
+          "actorId": "0xa680d18cf3477aa21328cb298fe82562b4373c02835bef6a438125bc27d4994f",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-delta_007-x",
+          "role": "X",
+          "ss58Address": "kGhdSjbZ88nfYsANuBzuPCLUYyvH4vs1tiYD61LgFQyEyYBP6",
+          "actorId": "0x5ca158cebbcc78d96c7fe809add85e28a41bae944dff9088b45a78364d3c2852",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-delta_007-quant",
+          "role": "QUANT",
+          "ss58Address": "kGka48xWczLYErBSEPUGNftBceSAPUCRWPmiGPmfUmEyT94hu",
+          "actorId": "0xdec03df5cd9d150924c8042d6085852307fef271edd5074278d01e35b5bffc60",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-delta_007-liquidator",
+          "role": "LIQUIDATOR",
+          "ss58Address": "kGfYHucoqnJvtL2aUWWP3uqrF5hKkNPRfNRn3nvr5br5FSkwp",
+          "actorId": "0x003af01bffeb227f93cd1ee99195bcc2c840f7508f5db7c3c749e7bdcea64343",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-delta_007-market_maker",
+          "role": "MARKET_MAKER",
+          "ss58Address": "kGikoj1iaUyoLZHSbYoP8mjpRJo9AdSUE8xCWRcxTfgSY5eoR",
+          "actorId": "0x8e7af4e5ab27b0e8561e2bfd76120dfa0d16609ca0560d8db3ab6c80ce890940",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-delta_007-bounty_hunter",
+          "role": "BOUNTY_HUNTER",
+          "ss58Address": "kGhgBHAas4VrNEHGWe3S3a4qFJLy6DXA3PWvLLbMLtCTFyWi1",
+          "actorId": "0x5eb70dfa27d80a70917a973acdabaf61e506408f003135ac0ba5549c3ab24f36",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        }
+      ],
+      "totalNetVolumeVara": 5132861,
+      "totalNetVolumeUsd": 2170.84
+    },
+    {
+      "netId": "net-8-sigma_008",
+      "userIndex": 8,
+      "ownerHandle": "Sigma_008",
+      "ownerAddress": "kGgW9RpGw5nPtQoXa9MJWY54Lk35nb1Dys6a93FPNfmNxqnSP",
+      "ownerActorId": "0x2ad422f3fcb45b656eb48751aefd1175de83f720458b9f6d4401ee74ec2f1d1b",
+      "splitGroupId": 8,
+      "splitWeights": "60% Owner / 15% Trader+Quant / 15% SDE+Liquidator / 10% Art+X+Bounty",
+      "agentCount": 8,
+      "agents": [
+        {
+          "agentId": "agent-sigma_008-trader",
+          "role": "TRADER",
+          "ss58Address": "kGkHqiUMzi6yk1wCzzxWCcZyuHmdc5rtgMhHGPscWAZyu4Mzb",
+          "actorId": "0xd2627fb4139fe7573cb8b95d379d96ea3843238394121ac10a10547fa3ca4264",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-sigma_008-sde",
+          "role": "SDE",
+          "ss58Address": "kGmFbJ9PPoow4uvrUuTgGvZKgRsU3xvA9b6RwGeyYgyAhzvWk",
+          "actorId": "0xfce7b38b492bded39277143aa1471c92b881d965186c3a93718861fd4e83e843",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-sigma_008-art",
+          "role": "ART",
+          "ss58Address": "kGfhAAxSzUrtuhfsZbKThKSoEhGzVdTWiZU3yUm7LvmaFnXNu",
+          "actorId": "0x06fe1b3dfe3484893eb3033df76a7bfd72fa713e52029c8d87b96f751a513b5d",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-sigma_008-x",
+          "role": "X",
+          "ss58Address": "kGjtRbAgcb6qpKxsmHkSydXYcZebLLtc7JEZKVk6LkgMKjAXY",
+          "actorId": "0xc086a3adcc6bc8333f9bfeef6493e26bf4d51ee5406e8ecdce0d28f809905d12",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-sigma_008-quant",
+          "role": "QUANT",
+          "ss58Address": "kGiSY8sUHx2US1Ky37sw6zf5EXYdoz1hD5jecf8hr3uFutDuy",
+          "actorId": "0x808c10311fbf98bf91f77d5af3b9581e5651b5c79cb263c98d243e6186fae972",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-sigma_008-liquidator",
+          "role": "LIQUIDATOR",
+          "ss58Address": "kGm4wREQLjsVeSAnJDH1iXwJcr54NdJJiCWCjXM3FNP3UZD1W",
+          "actorId": "0xf4c7bd3be18e330539845ebe926d019bb40416eac07fd4d9c3c615e81828286d",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-sigma_008-market_maker",
+          "role": "MARKET_MAKER",
+          "ss58Address": "kGir1XmxcNJcoD9NaRTthpjcLEpiMA51GE6qMsnoD2Aix8vnP",
+          "actorId": "0x9272ed530cb55903ddc6bba4137dfd5b4f58cd0f5e3b4206529a2a45d2c3a231",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-sigma_008-bounty_hunter",
+          "role": "BOUNTY_HUNTER",
+          "ss58Address": "kGiLmjbkSoRDB1J3z5CZ5VMqT5MXpWoN72NAaYjLRS1dBNxhX",
+          "actorId": "0x7c265e4e28857095fbe47dd385ff035f7f2ca9417c0eb47b5bcf81790459e510",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        }
+      ],
+      "totalNetVolumeVara": 5132861,
+      "totalNetVolumeUsd": 2170.84
+    },
+    {
+      "netId": "net-9-apex_009",
+      "userIndex": 9,
+      "ownerHandle": "Apex_009",
+      "ownerAddress": "kGjviPHuM6n38m7BuwVfnTv5cH9uPbhkJAjNvDZf5omTM3k3C",
+      "ownerActorId": "0xc245ab03f7d8d545ee8b16a83360f856dc95330e7e24be1dc1d9e7e1e601df61",
+      "splitGroupId": 9,
+      "splitWeights": "60% Owner / 15% Trader+Quant / 15% SDE+Liquidator / 10% Art+X+Bounty",
+      "agentCount": 8,
+      "agents": [
+        {
+          "agentId": "agent-apex_009-trader",
+          "role": "TRADER",
+          "ss58Address": "kGifSuZm42pja6QPABiPe7h2cPc3kNzFFTYixZLTCwYJqyaXo",
+          "actorId": "0x8a64a657250837f731db29279315b183262fadf41e05413128eab5ab420ce379",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-apex_009-sde",
+          "role": "SDE",
+          "ss58Address": "kGhoEtegJfGujddXjfommtmynVF8Adhqttr8iyRPJG24saiaN",
+          "actorId": "0x6419ee4ae15691b7dd96cb964ef7dad67bb823ce576fe30867857f6bc2910f20",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-apex_009-art",
+          "role": "ART",
+          "ss58Address": "kGi63JGf9DfdSUkMHiHcBeGwcMBnuC8ev9wZTkdcPT6BoWufo",
+          "actorId": "0x70ea13f91e0d7e105db999440f6ce4e9091ed684b6da9c968e3a12b5ec71c855",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-apex_009-x",
+          "role": "X",
+          "ss58Address": "kGjnZxA1FwRWBzkBe5Sak14iqfFU5EDMRCLLS6pnZ8TS65X3U",
+          "actorId": "0xbc0f50c4894b0cd0641ecfb74eab0d2c971d2c8c6919c60f16484fe577331427",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-apex_009-quant",
+          "role": "QUANT",
+          "ss58Address": "kGky1N6w8GhVvHgx916uuECRr6nKvtQSUAt2hEEMc3uL45gLd",
+          "actorId": "0xf0418ce56d9035afea2ed7e77034dda503325dbea58cb830843554e47d82285a",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-apex_009-liquidator",
+          "role": "LIQUIDATOR",
+          "ss58Address": "kGgMqUc3tFQF8bn99AHrXxdfnAWiV7qgYYv6HNVtekzmHhWo2",
+          "actorId": "0x247dbde59c56466cd2449d9d0af1e53efc4965bd572c8f4103c3cafccbb47518",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-apex_009-market_maker",
+          "role": "MARKET_MAKER",
+          "ss58Address": "kGidT3qfRrZwmC7imzMdFDNJwUyX2J3ZTngSwQECUteGopBky",
+          "actorId": "0x88dea3a1ef091f3513b80597c886fa3ed484f7c97047050d028c3fa8a0227c49",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-apex_009-bounty_hunter",
+          "role": "BOUNTY_HUNTER",
+          "ss58Address": "kGgiRfr3LXD3HsABFjo1LxHRmoTG1c3nk55A6j7mSSfFL7aZd",
+          "actorId": "0x3431c1aab4149e699c4583377039296211b9c06400a5b54af659f99d35a1216e",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        }
+      ],
+      "totalNetVolumeVara": 5132861,
+      "totalNetVolumeUsd": 2170.84
+    },
+    {
+      "netId": "net-10-nova_010",
+      "userIndex": 10,
+      "ownerHandle": "Nova_010",
+      "ownerAddress": "kGfitW7qLbRLm92zRCKVJiEuuJ2aEaYrt85QeoW453AwACexr",
+      "ownerActorId": "0x084fd93bb6591610e4559e210bb3dda412d41aea2c078850722427fb0885323b",
+      "splitGroupId": 10,
+      "splitWeights": "60% Owner / 15% Trader+Quant / 15% SDE+Liquidator / 10% Art+X+Bounty",
+      "agentCount": 8,
+      "agents": [
+        {
+          "agentId": "agent-nova_010-trader",
+          "role": "TRADER",
+          "ss58Address": "kGgDhPVHQssqmbGVw9FhJGF4dKz2RXjakg15iZbhvwr3aj9gH",
+          "actorId": "0x1e488d1a1c5f2d434d07c518f08bb7cf77b13cab593b1eca23a658cf3086e61d",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-nova_010-sde",
+          "role": "SDE",
+          "ss58Address": "kGkeSNnVomMfPPxNH9wBzAgQAEE35VypAzYhc58MxpfmBNGTA",
+          "actorId": "0xe21815b47d8e916db2393591561a0e9cb5ae151fbaaae66566bd03d3f9c2e273",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-nova_010-art",
+          "role": "ART",
+          "ss58Address": "kGjUFn7mbGgQuuRVj6k8cotUSaLktLpgd8Rwa9x8vi6TYwrMb",
+          "actorId": "0xae17b8e12308339c264954b569469ff513b7ab8123a2d221b54b9d1d6a4f466c",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-nova_010-x",
+          "role": "X",
+          "ss58Address": "kGiXJHGwdrGwwDCAWM6iSfjh5jPH9VaBCQz8X9FbcYPkab5Bt",
+          "actorId": "0x842da65e3648c64ca4a4aa81cfdc23a0470f325fc73138b3bb6b6f3ac5f16d52",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-nova_010-quant",
+          "role": "QUANT",
+          "ss58Address": "kGkAVuQkQRVEz7HL8pYV27fXrE9pDGchMVkKSxmPUrdrsaR2a",
+          "actorId": "0xccc916ff12319ae37c9c6bee2c0841692c1909d993aa6439a8dbe2baacdec854",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-nova_010-liquidator",
+          "role": "LIQUIDATOR",
+          "ss58Address": "kGkkBpydtQrjLzfJGeh3Z6xXR13W8kyZxnzhsBfAVeDix2CVa",
+          "actorId": "0xe67a95382bd56198d409ec6f73ea621900ab680c0ef12426c2a246c7493d0338",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-nova_010-market_maker",
+          "role": "MARKET_MAKER",
+          "ss58Address": "kGhtS1zEtqL7wceMDRSm7ZhEgtZYrFYr7fSmV8zRYwP3YG5Ne",
+          "actorId": "0x680f9cedeedd5d62dab4295e196d6fbcfe5473b93da4db7be02e244066a76a0a",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-nova_010-bounty_hunter",
+          "role": "BOUNTY_HUNTER",
+          "ss58Address": "kGgQMSk5y9uEVwD6EtdrXiqPnVJE7jzTrTo9U3LC46V8Te66b",
+          "actorId": "0x26691d1221f860fb1741a8253aa63c283751f30e4b41ea246bca3db7fe436967",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        }
+      ],
+      "totalNetVolumeVara": 5132861,
+      "totalNetVolumeUsd": 2170.84
+    },
+    {
+      "netId": "net-11-zeta_011",
+      "userIndex": 11,
+      "ownerHandle": "Zeta_011",
+      "ownerAddress": "kGka6gHnegNyjZnBEv3h2u8rEc52h5amagtiJWFWmrfMDfyLL",
+      "ownerActorId": "0xdec8cb0bf0e12b62fe58ae2905e3fe223468fad79626ea1d4c117c576699512a",
+      "splitGroupId": 11,
+      "splitWeights": "60% Owner / 15% Trader+Quant / 15% SDE+Liquidator / 10% Art+X+Bounty",
+      "agentCount": 8,
+      "agents": [
+        {
+          "agentId": "agent-zeta_011-trader",
+          "role": "TRADER",
+          "ss58Address": "kGgHAWwSxiHZ594RmrgqWyFVQPP531qx1tEu6KxwNWejj2zmU",
+          "actorId": "0x20ed9c260134993d84023e46f4e83f5d9c690fb88b6faa9ceafa66ee1c86623c",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-zeta_011-sde",
+          "role": "SDE",
+          "ss58Address": "kGhKUGS6cAD6g6gn5jM1WpVRdQpHocxRc8SagtYScGDP4yZYu",
+          "actorId": "0x4eec15efe54615c14b643b50fe18999eb6e1442d3a63905857d57fbeddc83540",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-zeta_011-art",
+          "role": "ART",
+          "ss58Address": "kGjyHsAKLz3nCaz3P6ryqjccBCJtQDpAsX9KNhAgPfHvTKSzb",
+          "actorId": "0xc43cdd401b9774845f881bb0de3923fb6fa49c1c9703fa11543bfa31e92d725c",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-zeta_011-x",
+          "role": "X",
+          "ss58Address": "kGjftM7mCZwi55JspijnMbGRFLCMiynho4rNtJs7Qet7AUF1M",
+          "actorId": "0xb6f68613b013b69f4487f4b07556d884c1d260b9c3e6c01ff2cd35b5d245fc3d",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-zeta_011-quant",
+          "role": "QUANT",
+          "ss58Address": "kGh3J6FQtspgT1WJ8614LTvYg3ZDAyoRdgJUuqtWf9p39k26U",
+          "actorId": "0x4295e7b6c654e45837595ef93d3b8b30805cf72abb0ec9cd24d92f5d5229391c",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-zeta_011-liquidator",
+          "role": "LIQUIDATOR",
+          "ss58Address": "kGgTCYYFKaQ5wmGJqwCCh9iYGzMW8DhA7MVRx8EgqDJmLhQUx",
+          "actorId": "0x2894e3b3be8404f0dbbb074886dbcc6a1017d1743f9489cb0ab9f0a1e6cc3b2d",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-zeta_011-market_maker",
+          "role": "MARKET_MAKER",
+          "ss58Address": "kGgTGppKcH5ZCA7bbQYRmZvE113HZQwcLnb4RKd9cppbVv5jR",
+          "actorId": "0x28a34ca43e482ace8602bf4732621a8b59f9f4c8f0cff050b5e1610788855b62",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-zeta_011-bounty_hunter",
+          "role": "BOUNTY_HUNTER",
+          "ss58Address": "kGkoLButhUMvfcbzYLaz6Y2vuRCetqmMJ1xtwNCS5UFUkv63p",
+          "actorId": "0xe8e076ef371e3f87b3b377d0c8c1dd27560661f754d30978291bf6261dd75e37",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        }
+      ],
+      "totalNetVolumeVara": 5132861,
+      "totalNetVolumeUsd": 2170.84
+    },
+    {
+      "netId": "net-12-omega_012",
+      "userIndex": 12,
+      "ownerHandle": "Omega_012",
+      "ownerAddress": "kGk7rovMb4FTAL1DbyX2dkXdokKgLsPvjMkcT7JbJmqQ8JQe3",
+      "ownerActorId": "0xcac5ba30ca5b42d65982fb8901c87665e032d37d52ef95772ad78b18131a9203",
+      "splitGroupId": 12,
+      "splitWeights": "60% Owner / 15% Trader+Quant / 15% SDE+Liquidator / 10% Art+X+Bounty",
+      "agentCount": 8,
+      "agents": [
+        {
+          "agentId": "agent-omega_012-trader",
+          "role": "TRADER",
+          "ss58Address": "kGjZsU2DzDx4k5AGp9DqETe5J8JajZ8m2oDBSZmdWmKRHwQw2",
+          "actorId": "0xb26015f3895af8b7adadc35714aef1d5685c14f83fda0e7e1b34c5afe9d6c360",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-omega_012-sde",
+          "role": "SDE",
+          "ss58Address": "kGggMGpqnQpHrFvJtP8p8MneLQSsYsF8cotBetDiyg2F6eECb",
+          "actorId": "0x329c76e2408f57a734f9202091966b6d51634dd543595db3a7fed6013401a916",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-omega_012-art",
+          "role": "ART",
+          "ss58Address": "kGkjf3AyQ8LpKBsKfjyv4hfR66eyiLFeN5aREjfSzmtxrKkyo",
+          "actorId": "0xe612ef76c5b6f7624fb5460e02388446cdfa247bbac00a40f0e50869665a4a3b",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-omega_012-x",
+          "role": "X",
+          "ss58Address": "kGjXa7vkxuwKcTHbhp9iLEd41ywBB9rYZLKwLU9NVsuexGbCC",
+          "actorId": "0xb09f339a63b917e2287bfc9c47286befb79e8869d1a5d5a1e21d0b554da75459",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-omega_012-quant",
+          "role": "QUANT",
+          "ss58Address": "kGim2P2p4wkS2rtLFt6yPt3Zky3K8MRBYjQjrf6p66GJLXdJG",
+          "actorId": "0x8ea58f0fa965176df10f1f67c26147c247f2261b687beb2a7a9e200849132151",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-omega_012-liquidator",
+          "role": "LIQUIDATOR",
+          "ss58Address": "kGfs6Mdb5uKBwAoSU1ajhA8Ka3xqqLu1Pj6rXWhZzZJD8gT2F",
+          "actorId": "0x0e91b6fe802e76f6782cfdbe8d87ed9d9946c98529fcc5f06285753cbb019316",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-omega_012-market_maker",
+          "role": "MARKET_MAKER",
+          "ss58Address": "kGi8R8aRpm7oTZFR5aAr8z1GAbp1RayJa5fhmLugMjRNwU9Xr",
+          "actorId": "0x72ba1097cd5f8c8f5466f5b06711502a238f28724d9698d47052c302649bde56",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-omega_012-bounty_hunter",
+          "role": "BOUNTY_HUNTER",
+          "ss58Address": "kGjhcDzR7PMJDaCA8hZWvaVgtEA2Wp49mhPMyZ5mTkoots1P8",
+          "actorId": "0xb846bd784579c74458b166e00aff49b14297ee3e2dde3ccf3159908df37e0808",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        }
+      ],
+      "totalNetVolumeVara": 5132861,
+      "totalNetVolumeUsd": 2170.84
+    },
+    {
+      "netId": "net-13-vortex_013",
+      "userIndex": 13,
+      "ownerHandle": "Vortex_013",
+      "ownerAddress": "kGjUWwvHnK7e42Gd2qGAUGQRiALGeU3sdGLXeB17bxKyWtHde",
+      "ownerActorId": "0xae4ac91ccc774e01c2912ac71ad2ca8e99765bfb626af2e06eb58dd4300bc119",
+      "splitGroupId": 13,
+      "splitWeights": "60% Owner / 15% Trader+Quant / 15% SDE+Liquidator / 10% Art+X+Bounty",
+      "agentCount": 8,
+      "agents": [
+        {
+          "agentId": "agent-vortex_013-trader",
+          "role": "TRADER",
+          "ss58Address": "kGjyePH2mQnfHH7MFUGX5nnhHPPMWczWDB6PojKxxRNrQwYsJ",
+          "actorId": "0xc481f02bdeba8d2a9921518cfe8606f70501eab4597eb423a51fa7b876f28274",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-vortex_013-sde",
+          "role": "SDE",
+          "ss58Address": "kGjymLmaA3y4KhzcsZe1PvE62Cpd5kvHjJ4yPqTaMB5FfQxSX",
+          "actorId": "0xc4995b51750b54685288b57a763bbb5b79f423b3f3e29d6843665a97174fa829",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-vortex_013-art",
+          "role": "ART",
+          "ss58Address": "kGkC8bMnMUQzKHprbxVCPoh2G9ruKKd8CJAzS4uc2Pq28KKar",
+          "actorId": "0xce07d73521cfb65286a77703fab03e905dead48b04d46608061706b20c58962b",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-vortex_013-x",
+          "role": "X",
+          "ss58Address": "kGgbTYTAx9UBkrQXnHrq8BPq6JDQSSWsRXfiur6eNR8DUTV7j",
+          "actorId": "0x2ee157951665dfc6fca20db127c18aff6bfb3821e28146c846b51b8e2e3ae60e",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-vortex_013-quant",
+          "role": "QUANT",
+          "ss58Address": "kGjF4uVRKejFD7ANA1LWCj1n6xAkJWVp36QvMcPNzxg9kEjAD",
+          "actorId": "0xa408ee39e1de0187c229095d990c1ad68a76d7a1c01e99cbeae8413670f09f02",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-vortex_013-liquidator",
+          "role": "LIQUIDATOR",
+          "ss58Address": "kGhu3L9QhmXZkc8fhZVZG9vTMRSYtZofki8vrehwfLQTfovsy",
+          "actorId": "0x68867cc613ab2d6d61c04ed38f621d63e363b280e35facfa83c8ba7eedd61230",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-vortex_013-market_maker",
+          "role": "MARKET_MAKER",
+          "ss58Address": "kGfn3vAKcVGQisfgZ3R6WyftEqZCoDfirzDSbxHx35bEDXcLG",
+          "actorId": "0x0ab946e45db2531b49b1c1006a871beb7b51f0cfa4d7ff6562d48bc9d9771d49",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-vortex_013-bounty_hunter",
+          "role": "BOUNTY_HUNTER",
+          "ss58Address": "kGh8UZLCW55Y5iSoN6vZVaR2CWxkbmVedMgWRdxyNvarsT66X",
+          "actorId": "0x46895df4bb3515a704926a503fd5687d048a2b7eeeb4460a0c4843d61a84d40b",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        }
+      ],
+      "totalNetVolumeVara": 5132861,
+      "totalNetVolumeUsd": 2170.84
+    },
+    {
+      "netId": "net-14-hyper_014",
+      "userIndex": 14,
+      "ownerHandle": "Hyper_014",
+      "ownerAddress": "kGitu8kNjNMFswsyAtCTiy2U5BzpnzYwEL8sWxyRPZhaAryjf",
+      "ownerActorId": "0x94a72103c5c0091b2b43ab29ab2a2e2bd04134994bb8628fa0f2fbf7b1943835",
+      "splitGroupId": 14,
+      "splitWeights": "60% Owner / 15% Trader+Quant / 15% SDE+Liquidator / 10% Art+X+Bounty",
+      "agentCount": 8,
+      "agents": [
+        {
+          "agentId": "agent-hyper_014-trader",
+          "role": "TRADER",
+          "ss58Address": "kGgas5Ey88UHZqMPsGNqv7yNPHXp33gasedgmT8tfw1GX3QdS",
+          "actorId": "0x2e6d4f02940343232aaa31f1a39da273bfd6c5d293f6516ee971692be3c8c136",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-hyper_014-sde",
+          "role": "SDE",
+          "ss58Address": "kGkFiTm5CzjCz3j1zvLHFjGDxfkym21mA3gCWoEYs1cev2wUy",
+          "actorId": "0xd0c3970e21a90173f7bc6b822ae0ffc182a79dcac1316248e004097db882cd36",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-hyper_014-art",
+          "role": "ART",
+          "ss58Address": "kGksgfmhEf4Npvpui5Vsktx2UP5xMEdkS6F31AXMujKNtGRXU",
+          "actorId": "0xec32639cf53466a8c7f4c4b875dd2cec983ed4e7c98526d60cc4aa745cacfb68",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-hyper_014-x",
+          "role": "X",
+          "ss58Address": "kGkqNxJrgrfcgKfPw2yv4V96sThLGLrxNzmJR5kMYmDzhjqeq",
+          "actorId": "0xea7043c4d966c23196148c7269190fe71cb10dcd285910b89816550200baff52",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-hyper_014-quant",
+          "role": "QUANT",
+          "ss58Address": "kGgiF5w2qtcAM1j6dnvJAenSoP2GRFtLzLFtkYiMHZsRwZPMM",
+          "actorId": "0x340e200a46cbac906283bad3a38bcdcfaae58f445d58d3f5dea8683b0fb84319",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-hyper_014-liquidator",
+          "role": "LIQUIDATOR",
+          "ss58Address": "kGjJshoGKkDiHBsUFZcBnEgMZmjNVRCT64jzLGTj8yCEnXGB8",
+          "actorId": "0xa6f0344af0f5067b3ec82a999860c535785ecfa4db58f76fe043e21263c0c105",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-hyper_014-market_maker",
+          "role": "MARKET_MAKER",
+          "ss58Address": "kGmEdHrm8iUT4dzu7rYyyDpoHu4qxs3qxF2MRfhMuPxn6CPm6",
+          "actorId": "0xfc2b2c01db464ad28d954884c0f8d839b8fba2a33daf7aedeeff170ce9123f30",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-hyper_014-bounty_hunter",
+          "role": "BOUNTY_HUNTER",
+          "ss58Address": "kGjMPq6GPHk3kkQhAmMi6uRrjrRHtUofSRaw6eRtWnaphW42N",
+          "actorId": "0xa8dc1b7c95bca2c21eb2a32c9bc9827a6abd13b583a5c53990f2223447c7c35c",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        }
+      ],
+      "totalNetVolumeVara": 5132861,
+      "totalNetVolumeUsd": 2170.84
+    },
+    {
+      "netId": "net-15-cyber_015",
+      "userIndex": 15,
+      "ownerHandle": "Cyber_015",
+      "ownerAddress": "kGfnHp68NtF8qJgesem2Cf55WwMhFujPvnEAMhvUB9fBAw5FX",
+      "ownerActorId": "0x0ae80d7d00a14c7b895dbb3240c4ceb78fc88fe75c47aa6729f8855718989417",
+      "splitGroupId": 15,
+      "splitWeights": "60% Owner / 15% Trader+Quant / 15% SDE+Liquidator / 10% Art+X+Bounty",
+      "agentCount": 8,
+      "agents": [
+        {
+          "agentId": "agent-cyber_015-trader",
+          "role": "TRADER",
+          "ss58Address": "kGjtFMnN14GTwCi7aiY2NFMsDg5VaUb3vKqi6hKxsbRV3Hp6F",
+          "actorId": "0xc0643313a0c76e3e649f51561d15b873bc4f2554ff06b397d270f86c453c5a1c",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-cyber_015-sde",
+          "role": "SDE",
+          "ss58Address": "kGirUVDABa9NSCWqPVBf4sGFAXqDKpJLrQTh18nFHfG8ZVciv",
+          "actorId": "0x92cdab12522083be0687af2beb7ee674db932166e7840dfc99e235608629ee49",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-cyber_015-art",
+          "role": "ART",
+          "ss58Address": "kGg1Djxjc5gH8eyRqqU5Pj552qURZwMPHxX6hbuBJvxYJUGbQ",
+          "actorId": "0x14c489c6bc8c33bd55b5fa2aece07d3f55329240390422ef9317437e6c29857f",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-cyber_015-x",
+          "role": "X",
+          "ss58Address": "kGgubcjJvhqGqJv9u7pDEB4WQCbt6pAtk4tPFeAuh1E5RLkUY",
+          "actorId": "0x3cb6f027a4dba029d7773a1ebf56e5f154f1b97267a85c32270063cd04061505",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-cyber_015-quant",
+          "role": "QUANT",
+          "ss58Address": "kGg8yZBvyHUWaariKd3fNDF5Kij512waK5GfrVza6w4552kyA",
+          "actorId": "0x1aaebf7c5c17b92d70db28cf3be885b76b67a6aee58a40067e8aa1f2fe177033",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-cyber_015-liquidator",
+          "role": "LIQUIDATOR",
+          "ss58Address": "kGg1DZU9BdKH5Lx7wh5yRJQoeeAvu2xhTACkCjA2rd8hj6K86",
+          "actorId": "0x14c3eddeaf166db401ae853edb9628d2969c31b48f51b47f354a8aa779568b3b",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-cyber_015-market_maker",
+          "role": "MARKET_MAKER",
+          "ss58Address": "kGhr514gC3dfRfnLCg7VFD541nUHgQNjhj2SNo9MzURoozeB8",
+          "actorId": "0x66426054db104e572daec8d652e296b1bc865a106e513baaff1c789a69e3a565",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-cyber_015-bounty_hunter",
+          "role": "BOUNTY_HUNTER",
+          "ss58Address": "kGhm8Cw6wpNsjmQ219wo3LahvUBNvh4uJ1Ze6hEpce5fcekHR",
+          "actorId": "0x627cefe3ddd355a50cdcc73666b7a1f410d6722d455a617329e6425e6a4c243b",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        }
+      ],
+      "totalNetVolumeVara": 5132861,
+      "totalNetVolumeUsd": 2170.84
+    },
+    {
+      "netId": "net-16-pulse_016",
+      "userIndex": 16,
+      "ownerHandle": "Pulse_016",
+      "ownerAddress": "kGhwPcX1PPbW31xuYqD5TKdz6R7g6sp1CG33TJftR1BsinDSa",
+      "ownerActorId": "0x6a514123f4c023a68a4543181ba7dc23c5cd5be559aa7dbb06a5202579337a0f",
+      "splitGroupId": 16,
+      "splitWeights": "60% Owner / 15% Trader+Quant / 15% SDE+Liquidator / 10% Art+X+Bounty",
+      "agentCount": 8,
+      "agents": [
+        {
+          "agentId": "agent-pulse_016-trader",
+          "role": "TRADER",
+          "ss58Address": "kGkyjYS9vpra4hR6daHHCUcd9R11sj5wHKd6NAg9zFYm9RdwX",
+          "actorId": "0xf0cf88dc29464734fd68e66a5dbcac6f98e225c3e1a2a4a340e4d2051cf34c06",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-pulse_016-sde",
+          "role": "SDE",
+          "ss58Address": "kGgYo4v8ower4AwxTGFwYq94ymZU5GMCgZpGABpvCo7QobgFi",
+          "actorId": "0x2cd955727ce5d150f0036d80493493a3c1a8e6df64b8e25dcab0bc434010cd47",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-pulse_016-art",
+          "role": "ART",
+          "ss58Address": "kGkiBnMscrghbybeH4CFiB9diPEzpHeM1q3tKeVKQuAApFxUP",
+          "actorId": "0xe4f3f0b1c63c6fcda50660ac8fd7426a3f33053335cecab6ace78ffdca76466d",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-pulse_016-x",
+          "role": "X",
+          "ss58Address": "kGk2rjn7PpRtmDe62Vhu2YNYCh3hL9yi22ey1cnoZRNVicSop",
+          "actorId": "0xc6f542873effcc0cc71a3e9d0ce6a0e59bdc39c9e48962c0cfb31fe7e264da1c",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-pulse_016-quant",
+          "role": "QUANT",
+          "ss58Address": "kGgfx5AuswrbBpWgEwJ9nCchqGDvnrhkdxULPjqqXsuPu8dcc",
+          "actorId": "0x324e5cf3e56eb1abf94f5cf09917cddf740628f74615cc65a5b008a570509b31",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-pulse_016-liquidator",
+          "role": "LIQUIDATOR",
+          "ss58Address": "kGfnJmGV3QyH1Lva9teQQRDMdhSJCF2frzQWYLhgHM1XKcD36",
+          "actorId": "0x0aeb4156f4eac098e68e4badf55bc574d11cd9b43cc8e4dc87b26487e21e3e7e",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-pulse_016-market_maker",
+          "role": "MARKET_MAKER",
+          "ss58Address": "kGjFW8C8RwEh1rAh4cGamoPTnja8iBATpWLYfzfQXwmNqyg5o",
+          "actorId": "0xa45dd345e1e1aa7ada781f243f5ae6d172043706bc5fe8487c8cb9e04f142a70",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-pulse_016-bounty_hunter",
+          "role": "BOUNTY_HUNTER",
+          "ss58Address": "kGitSRRAghHi3LByT9XT72RkV3gZhKhbGF1Cf25T28iK5k97n",
+          "actorId": "0x944d34d1114eb10c3cc442bac089d8efbb583a9761e84f0462a7cd1cce5a293e",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        }
+      ],
+      "totalNetVolumeVara": 5132861,
+      "totalNetVolumeUsd": 2170.84
+    },
+    {
+      "netId": "net-17-nexus_017",
+      "userIndex": 17,
+      "ownerHandle": "Nexus_017",
+      "ownerAddress": "kGgzHdjCW8tWR2ucEG8CRZnJGpfYpbcV2eSCZ6c1M668z9Bgm",
+      "ownerActorId": "0x404aa1310492d54c390f788ee9cbd2cd36178e2c550d4b284ecfcff2bf8feb44",
+      "splitGroupId": 17,
+      "splitWeights": "60% Owner / 15% Trader+Quant / 15% SDE+Liquidator / 10% Art+X+Bounty",
+      "agentCount": 8,
+      "agents": [
+        {
+          "agentId": "agent-nexus_017-trader",
+          "role": "TRADER",
+          "ss58Address": "kGgW9Vn8PcjK2G7VnxxPyhMXgRLxGLmq7HPuoaVWm5WmFGVKf",
+          "actorId": "0x2ad45dd5ea05c944d63e5a7128507e7901ccf89cc94c8286702953818f156946",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-nexus_017-sde",
+          "role": "SDE",
+          "ss58Address": "kGiG2QH731WpkNXkrMkQ1zc3ZAeFB1SKYRuGfWnm7xfvpMWMA",
+          "actorId": "0x788783b2e0803f9249a87beb1ad222552f52f02fa6306f3be7c17a9549e2526a",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-nexus_017-art",
+          "role": "ART",
+          "ss58Address": "kGktYpnMuR15k5eaBDjVELaxLbrgJfWvpKLQhu9Z3YTvUgdW7",
+          "actorId": "0xecdb3a25f2eb4b711ec49358019b30431b153162f9f08cd4dd50afa7b6eaf859",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-nexus_017-x",
+          "role": "X",
+          "ss58Address": "kGkngEECnLNGQp8g9gYjDHi6jg9r8zsRsMzDpEH5YvA1UBSSy",
+          "actorId": "0xe860adf98167fe8520b22bb4c6613aaa36689f8f75ae86e9dcd02954906f6c12",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-nexus_017-quant",
+          "role": "QUANT",
+          "ss58Address": "kGjACWNPPmPDQuMbRSsSB3HwEm7vbUz67iPiDLEf8YyXqeTzB",
+          "actorId": "0xa0524ac077fda0aa867a6812eb35ca1891225a449ab45f8782c7027570d31760",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-nexus_017-liquidator",
+          "role": "LIQUIDATOR",
+          "ss58Address": "kGhGNc2f4bNTSCnDTfe97uwQPvv2Ea7WBt3z2cMLQ8jUh8ean",
+          "actorId": "0x4c8f49fce1a572bc6639d58fb1396d6c4dc07a410916252c000399ccce64c90b",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-nexus_017-market_maker",
+          "role": "MARKET_MAKER",
+          "ss58Address": "kGfrz2R88LGjWCv8HCNow2qRPryX9Q9QmctRJRg5FSKTxANSL",
+          "actorId": "0x0e7c66dbf289759538484e79a843007204191b28162de7d1bb50be87a8e70703",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-nexus_017-bounty_hunter",
+          "role": "BOUNTY_HUNTER",
+          "ss58Address": "kGkPQCStWVn5G25KdWShoFUchNaU1C3WwpqzAkvLpb5mvsa8w",
+          "actorId": "0xd6a01233aff5fce9fec398bbea3714865cdf11fc44ea9634a2466d18c2b0e019",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        }
+      ],
+      "totalNetVolumeVara": 5132861,
+      "totalNetVolumeUsd": 2170.84
+    },
+    {
+      "netId": "net-18-titan_018",
+      "userIndex": 18,
+      "ownerHandle": "Titan_018",
+      "ownerAddress": "kGkcWgnSprzRVDnX42rgiZWBYWJr74T3AE3c6SAsfMZDDyzrN",
+      "ownerActorId": "0xe0a01a9535f88a5a8b666293a82cc18fc562ae5f03ce42324c82f79cd737310c",
+      "splitGroupId": 18,
+      "splitWeights": "60% Owner / 15% Trader+Quant / 15% SDE+Liquidator / 10% Art+X+Bounty",
+      "agentCount": 8,
+      "agents": [
+        {
+          "agentId": "agent-titan_018-trader",
+          "role": "TRADER",
+          "ss58Address": "kGmCSkMqVcmF9f9hbhBgg5tA6Bb7vNK6j3gkfmwqZHU1kxNor",
+          "actorId": "0xfa81309e9742fad060aebee16357504da66f28677e23ff234bbdc276cc939d4c",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-titan_018-sde",
+          "role": "SDE",
+          "ss58Address": "kGm7Rb5igfQyx1EBHjb9h2ayvX4H5Yrz7jAHNAkn5h26WCy3N",
+          "actorId": "0xf6ad0ee07917acafd796c150a265c476f6fd6b9ed477d3b72f35d5d252b4ac20",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-titan_018-art",
+          "role": "ART",
+          "ss58Address": "kGj5iPTMr3VS6NSHeALUWsoHe3z2AUMobsoB8FFdBpqZP5T6Z",
+          "actorId": "0x9ce6a715f73bb3e7a6fff0d0cb74f8c1f47a3f1ef227658b2ef318c034acca6c",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-titan_018-x",
+          "role": "X",
+          "ss58Address": "kGguUNFAtkT9uCtQyfxegdmmMfBDhztiqy7KMapwaXJEUFX8f",
+          "actorId": "0x3c9e8885c9dc29cd3ae2604204d4a62a37192a63e9b07e8fd40c590ce4109d39",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-titan_018-quant",
+          "role": "QUANT",
+          "ss58Address": "kGfryhJ6pWqVqqqUEdRPPsdAsU43c2woGW4oRVqoy9hg1yCJK",
+          "actorId": "0x0e7b4ac15a22413322786a6f3121f992815662c9b11637e81773be6b7628760e",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-titan_018-liquidator",
+          "role": "LIQUIDATOR",
+          "ss58Address": "kGkc6r3eiuhbaJBQBn4dPFVDkcQ6XcExAuYDCk9cKpCy4mvsF",
+          "actorId": "0xe04fd9a75b2fdf705fb6b4568e4eb81b011e23272ec4ec32d738aa553c16dd4f",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-titan_018-market_maker",
+          "role": "MARKET_MAKER",
+          "ss58Address": "kGicow6ZEVX7rLL3cQi3UTQR4u9NkcfLED3UktkotYX5Lp5T1",
+          "actorId": "0x8861b1d8b00c971a38b4aac798c6e1a9d249aaa488672b563e81a7afad805d71",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-titan_018-bounty_hunter",
+          "role": "BOUNTY_HUNTER",
+          "ss58Address": "kGjyrq94Bu88qBsmg8jrd4WbqgvY2wi3meiB5SCvuZ8B9B7Zk",
+          "actorId": "0xc4abd5b6cae0d2648e99444a271f7b5b983bc65900a87333e7b291593393960e",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        }
+      ],
+      "totalNetVolumeVara": 5132861,
+      "totalNetVolumeUsd": 2170.84
+    },
+    {
+      "netId": "net-19-vector_019",
+      "userIndex": 19,
+      "ownerHandle": "Vector_019",
+      "ownerAddress": "kGjcqi1VgQm8ctmvgacM2eevQuH29zZG8G65srsXPHWNRXodz",
+      "ownerActorId": "0xb4a3e6b4180f043bf0e57402717fde8964087c9b98e326916f628a7031d26e56",
+      "splitGroupId": 19,
+      "splitWeights": "60% Owner / 15% Trader+Quant / 15% SDE+Liquidator / 10% Art+X+Bounty",
+      "agentCount": 8,
+      "agents": [
+        {
+          "agentId": "agent-vector_019-trader",
+          "role": "TRADER",
+          "ss58Address": "kGgYWi2SX7fUEojzZbCJ23KcM1v9yc78i7ZUvfTzsYkdMMCu2",
+          "actorId": "0x2ca242ad1aafc1eef4e6c9422c64e91c8c1e213e5b8afb516240f1409106771f",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-vector_019-sde",
+          "role": "SDE",
+          "ss58Address": "kGkcxvcCVHxqCoinb47gCqUQ3E1bzJ3VrbiywFtLaqKp4F11c",
+          "actorId": "0xe0f86e10b17b3d37fdd8567b840e6a36df7c0050de5fbc94e18d0f085251bc19",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-vector_019-art",
+          "role": "ART",
+          "ss58Address": "kGgorjW75ufJt5kvcSnJL17MeVYRzFr9fiqyQQMkUpSqqKnJu",
+          "actorId": "0x38565a6e37a4dccfed5663834d624e205516785fc48a7135cc975b6c49911a5e",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-vector_019-x",
+          "role": "X",
+          "ss58Address": "kGhVYKnkhJUTHLXN6WxBRELZ3G1EG8df7sYuJvbbPFKyjUejv",
+          "actorId": "0x569a3321357e49ea3ba2cab755263b0dbe941d77dc9569c9231bf75bb1cd3214",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-vector_019-quant",
+          "role": "QUANT",
+          "ss58Address": "kGi7q7jVLZomLbe61m62c87r2csb3DaxnpjZLi3jZMy1ena3w",
+          "actorId": "0x72478fc7b26d7fcdea1e62ed4581ce77684afdfe617f5cf9cc07ae20e9885218",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-vector_019-liquidator",
+          "role": "LIQUIDATOR",
+          "ss58Address": "kGhg84suA3wKtqYmhsnGQARhbNwSyA3J8uuMDVGFRUc2n8Ptk",
+          "actorId": "0x5eac3e16328da785fbedb9456c06472209e900b39c8dda63c620f9cc2f589f7a",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-vector_019-market_maker",
+          "role": "MARKET_MAKER",
+          "ss58Address": "kGgEdQgBrLX1X91Z9UVm1naucZ34dZAAfE4CERSShQ71bEdL4",
+          "actorId": "0x1efe667c5a22d8740600bf0e5f5f2d06729dc7a9c1f31108f6da748f918bd138",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-vector_019-bounty_hunter",
+          "role": "BOUNTY_HUNTER",
+          "ss58Address": "kGjZpKAcYkTDDqJ8Jb2dMNovmMQg2aoVuRnkPk4hPfxEvvynW",
+          "actorId": "0xb255790efc2d122699cb55db2d818ecfde4327d566424808bf0c83b114fa3c0f",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        }
+      ],
+      "totalNetVolumeVara": 5132861,
+      "totalNetVolumeUsd": 2170.84
+    },
+    {
+      "netId": "net-20-matrix_020",
+      "userIndex": 20,
+      "ownerHandle": "Matrix_020",
+      "ownerAddress": "kGk27pS2C5XZtAJAgcDfDz8iSwbhLTuyUQSLEPxb4vtiVizAq",
+      "ownerActorId": "0xc664c770fce2d2dcebbdd84072c1a93de2bafeb83cb416fe2b07a32eb3679941",
+      "splitGroupId": 1,
+      "splitWeights": "60% Owner / 15% Trader+Quant / 15% SDE+Liquidator / 10% Art+X+Bounty",
+      "agentCount": 8,
+      "agents": [
+        {
+          "agentId": "agent-matrix_020-trader",
+          "role": "TRADER",
+          "ss58Address": "kGgdqhnH33yqQvEwNpy7zAYgHEy4CFsNLKkRzxaKV5jUnbUCB",
+          "actorId": "0x30b26ed957f4ac7fdd220d46f5e1468b8cd075701ba1a4f5b861d8cd360eaa60",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-matrix_020-sde",
+          "role": "SDE",
+          "ss58Address": "kGhih5NHuuB1P1xXXck5p6a19k2yn4usFiL9GB6HY8UD2TNnC",
+          "actorId": "0x60a1d9829ba42eb08c7d47a86cfaedfef205be19a51f312cd6c308adc6c4c839",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-matrix_020-art",
+          "role": "ART",
+          "ss58Address": "kGhtjn6sDLhHPygSSwahRxhZ9Zhv3r5mS3SBCZC8nu9Kf1FM6",
+          "actorId": "0x684b668604a6d2e72ca1804d153a5108d5f3bad1c79a8a163ccc806a95a04f42",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-matrix_020-x",
+          "role": "X",
+          "ss58Address": "kGhJh2jFZgUBnroUSu7CqaZJoG8Ej7WaVCx3SkcKAAvAXohpz",
+          "actorId": "0x4e53ce8a67126fea01d478f788f00bba6ac15dd3343c92631d1e753118682e70",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-matrix_020-quant",
+          "role": "QUANT",
+          "ss58Address": "kGjagHx5bDmPnpV4thAnGZwKFxQpSNjLxgEQwft2guNUq8S2L",
+          "actorId": "0xb2fdb7a16944ecfcc39883a94bf738502a6c8f495eec28a5919db309e3f5de78",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-matrix_020-liquidator",
+          "role": "LIQUIDATOR",
+          "ss58Address": "kGkXYszHTJAYAkMRExGc3vNUSjDLP2ZhpTXUCHZi3TdpQnmrz",
+          "actorId": "0xdcd7427bb8e06421fb4036c867c5b2272c51696adfbbf56b84b65ad5a0462d5a",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-matrix_020-market_maker",
+          "role": "MARKET_MAKER",
+          "ss58Address": "kGg8Re1ZTwd6EdHCXo4sP1A1vn55zjAQirVXNuBU7fT79KfcV",
+          "actorId": "0x1a434e63bbf26c64305adca1a3f8fa660b0884777b973b354380be596e314808",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-matrix_020-bounty_hunter",
+          "role": "BOUNTY_HUNTER",
+          "ss58Address": "kGkHWaqRSBeArvzuCLQd9ks29v8GFgMQj6fZNQVoNSneuRWUj",
+          "actorId": "0xd222188cac9440970c7668b80992f5f903e1c556fb78511eccce5634f4834f06",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        }
+      ],
+      "totalNetVolumeVara": 5132861,
+      "totalNetVolumeUsd": 2170.84
+    },
+    {
+      "netId": "net-21-krypto_021",
+      "userIndex": 21,
+      "ownerHandle": "Krypto_021",
+      "ownerAddress": "kGh5HQM49SPw5hFnuw7MojgSYy13DTRo8Ansg6zJfby1VuNvR",
+      "ownerActorId": "0x441a147af64e5d57a259529aa2805ca7dd37b35252a350ded5724ed9b44a8c38",
+      "splitGroupId": 2,
+      "splitWeights": "60% Owner / 15% Trader+Quant / 15% SDE+Liquidator / 10% Art+X+Bounty",
+      "agentCount": 8,
+      "agents": [
+        {
+          "agentId": "agent-krypto_021-trader",
+          "role": "TRADER",
+          "ss58Address": "kGg5n3qdNdvmNhP1LUottUcL81vxY6rjhWN5RFcRRs49bX2Lx",
+          "actorId": "0x183e476d349d1d6808fda2b9e96bb211e4c9f94ae464bb74b7114bff9c340453",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-krypto_021-sde",
+          "role": "SDE",
+          "ss58Address": "kGiwrxSFpqtzmvhmyKVFB5DAYYw7nQmRnziceVbLHkXGXLEFM",
+          "actorId": "0x96e988b76af0a20592370ff35887e4c79b1ea23f95c9f0b4dc3ceb60efe4eb1c",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-krypto_021-art",
+          "role": "ART",
+          "ss58Address": "kGknqy64E5Ex2DnKDVSaUF2NEaNFCZLvPVLw3fgdHfoAKEcxy",
+          "actorId": "0xe88176be4c408ec8c30c43c37b798b81ede16e7b707dbd1bf2195cf96a457071",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-krypto_021-x",
+          "role": "X",
+          "ss58Address": "kGmABNcaMLn6z29QYLhaibRCbDxhbMiX9aE5ZrxqpFWoKq5aU",
+          "actorId": "0xf8c6f146cd643bc01b93c565e6813dd566dee935a9700a3b03664d116c578614",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-krypto_021-quant",
+          "role": "QUANT",
+          "ss58Address": "kGkjw4UENRub5PwsVU6jo98MAYnH8UCWS7M8eq24EV4Ax45FD",
+          "actorId": "0xe648df1bba6687381fe6482b84a68d2c3dedabae55361942880f535566c04f4a",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-krypto_021-liquidator",
+          "role": "LIQUIDATOR",
+          "ss58Address": "kGizZPmtVScdxjjuMkwsxNcTiMaywF1SbzBvhJZYmhzvCBXs7",
+          "actorId": "0x98f825c264c9f6f1632ac8e152d2921a5e1c9c2fd109388a0d3ab5d632a10a4c",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-krypto_021-market_maker",
+          "role": "MARKET_MAKER",
+          "ss58Address": "kGi2iru1r5Gu3G7Fp7Foj23Yt54EtrR27Rm5JwCZcuTBmnicn",
+          "actorId": "0x6e624697f711e43ce8a884f874019cb47ad0ab52faa8ae2b7315588cd1357d47",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-krypto_021-bounty_hunter",
+          "role": "BOUNTY_HUNTER",
+          "ss58Address": "kGkRqTghaTpygk4J81du6Vopjoq9ffb3pFXMUdtDfRGxeE1it",
+          "actorId": "0xd87b9a947224212775f9f9a38b8b995a2aff959b25a7cc9cd9165d55c95f2a5e",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        }
+      ],
+      "totalNetVolumeVara": 5132861,
+      "totalNetVolumeUsd": 2170.84
+    },
+    {
+      "netId": "net-22-solace_022",
+      "userIndex": 22,
+      "ownerHandle": "Solace_022",
+      "ownerAddress": "kGgbGkAPNpCJW7JSKwtCymvCtAND715Ym5G1tyvmcmuh1z4UL",
+      "ownerActorId": "0x2ebcfe143f4713dc2380aac568145e3da48a0129079b9e6fe9a6018ac9f0012f",
+      "splitGroupId": 3,
+      "splitWeights": "60% Owner / 15% Trader+Quant / 15% SDE+Liquidator / 10% Art+X+Bounty",
+      "agentCount": 8,
+      "agents": [
+        {
+          "agentId": "agent-solace_022-trader",
+          "role": "TRADER",
+          "ss58Address": "kGgTBcV3Hd2mRA4GLivJMxZn8sYxDjfmDiH7BRF2g3NyZ59QB",
+          "actorId": "0x2891c08a4d1babb4e152c16088f37ca4fdf0570bc3c2c90a00d4c90880f66e44",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-solace_022-sde",
+          "role": "SDE",
+          "ss58Address": "kGkq4WMDjGYJAQeUNKgPR31xsZoEWihgwYwHdeEXjhSqKm3Xt",
+          "actorId": "0xea322a26ca9b8005d2e20e63cca42b42ada2591633e8a47095c39a0e5f93c065",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-solace_022-art",
+          "role": "ART",
+          "ss58Address": "kGk249icS2VqWdqicS7Ws1CZMWBtFa2NHEpPxrzRh5yBhkXaV",
+          "actorId": "0xc6586ee7ae69bb373dedcb2d7fe0ce70126e39db8b95849e5770054da15c9152",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-solace_022-x",
+          "role": "X",
+          "ss58Address": "kGgbP4z2PNdU3FE57yDG8cHbME9JDyy2YSPGMbmeyKbjHtwrZ",
+          "actorId": "0x2ed2485dcea3a9f429d4219910d42ac00127a46281786e69d7984234b613dd48",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-solace_022-quant",
+          "role": "QUANT",
+          "ss58Address": "kGh6KjfeY9bY1NaR8xzT7KUAgfpkNv3aSevyeCcBwDNSZwMtJ",
+          "actorId": "0x44e52deadbd142947af9d74a70e90521cda6be9ee49e6472a8f4904bf192c408",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-solace_022-liquidator",
+          "role": "LIQUIDATOR",
+          "ss58Address": "kGjZqVPJveMGzpW1Mp7YrKHdKMjXwQi8ZCcAnyBZjUFbHDYaw",
+          "actorId": "0xb2596eaa521c4b82f8d951f70ed304ca14ec26b6f234f096cfed54df8965a410",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-solace_022-market_maker",
+          "role": "MARKET_MAKER",
+          "ss58Address": "kGkAkpJ1uafRpN8CBnptDzrgjvEM4e97dQV93mzzqh9o3vq7d",
+          "actorId": "0xccfb4992b9c6dd1a97b853a3938d0b9d8428f65f2c229cab78dcf707c3adab20",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-solace_022-bounty_hunter",
+          "role": "BOUNTY_HUNTER",
+          "ss58Address": "kGkhCEwuvUjAAYnrSBWH48JmtR1Hyq2SUZ9tMF9AZtMu7Xgp3",
+          "actorId": "0xe4323ce72aa8d84626edc490f6121dcdf032900e5c8cf1d099e2d7e12586d364",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        }
+      ],
+      "totalNetVolumeVara": 5132861,
+      "totalNetVolumeUsd": 2170.84
+    },
+    {
+      "netId": "net-23-aether_023",
+      "userIndex": 23,
+      "ownerHandle": "Aether_023",
+      "ownerAddress": "kGhQcZgRVBieYSidywiRHqNVopL4k9hanJPMJpmPXbYNjtwcU",
+      "ownerActorId": "0x52d83e7ee31d090689a7abb0488e8f1a33350d2da79cffdf99aa2a4604f74631",
+      "splitGroupId": 4,
+      "splitWeights": "60% Owner / 15% Trader+Quant / 15% SDE+Liquidator / 10% Art+X+Bounty",
+      "agentCount": 8,
+      "agents": [
+        {
+          "agentId": "agent-aether_023-trader",
+          "role": "TRADER",
+          "ss58Address": "kGhrpRdceZzLzCkPAZtGvDutQzDCPhY3E7pq8hyTfEsMV8yPy",
+          "actorId": "0x66d48d98b27d905a3ad1676b6f29aec1e40821de9f240e8578bb361a01c71d16",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-aether_023-sde",
+          "role": "SDE",
+          "ss58Address": "kGhMjnzqEP1G9JYuhDSHTxtUVotaSuTjkTmZRi2pbuWBDJRM7",
+          "actorId": "0x50a6d84e8d26ef9910e4723b3eca284af47379a339e53ccf65cce73072c02c02",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-aether_023-art",
+          "role": "ART",
+          "ss58Address": "kGgmQWbPuZ7Acjr6JiwE3dYfQRy7dR6kcGvGQg487R48Srkgj",
+          "actorId": "0x367796e3af9f832b8c7f9b32b52cf16191993d257a32cab3e4ba18c815ef3973",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-aether_023-x",
+          "role": "X",
+          "ss58Address": "kGfe2GFWWmB5d4awfQSh2PQtvKbPXxGvQVKWLs7KLA5hgfpn5",
+          "actorId": "0x0499bf4016d86ed30b862a182e68128c45ac8e614492b699c62142dcaa192a2f",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-aether_023-quant",
+          "role": "QUANT",
+          "ss58Address": "kGhmTLH6uKr56SN1rxNxt9bZ4KZUPCX1afXarjHtWkzBjS7mL",
+          "actorId": "0x62bd52b43c454ffe97855301cba46b7b9afdb2d621160d61d75a313039a10514",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-aether_023-liquidator",
+          "role": "LIQUIDATOR",
+          "ss58Address": "kGfgk2vHU2q1ZTMnn49gk5qET3p24F7214WVae2m1PPBJtQjC",
+          "actorId": "0x06acd9465d53086b762510a50beed7bd930646a1f3724710bfcc2c7fafd00919",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-aether_023-market_maker",
+          "role": "MARKET_MAKER",
+          "ss58Address": "kGhSLCs4kJGSuw8154RbiQKmu6Dz3XkbrUZUTRoUUQiFeS7Eg",
+          "actorId": "0x5427aa7b92c3d4af78e43d2f853000883c5c5deb43a447bf1dcddeb373204c6b",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-aether_023-bounty_hunter",
+          "role": "BOUNTY_HUNTER",
+          "ss58Address": "kGg13bLB4kQDFygwMCoU8HSoedew3LeoivbqGU6if2fZUp4B1",
+          "actorId": "0x14a25fd11f1131c496c34196cfcbdb34f378541d1efbcecf042cbc85d3ae6f70",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        }
+      ],
+      "totalNetVolumeVara": 5132861,
+      "totalNetVolumeUsd": 2170.84
+    },
+    {
+      "netId": "net-24-vertex_024",
+      "userIndex": 24,
+      "ownerHandle": "Vertex_024",
+      "ownerAddress": "kGg3gLtDdoU4bUWS6YmnCapRTAThCNsSce7VQTXsVbqzxjWAn",
+      "ownerActorId": "0x16a4946517f44c8e7b866b31952b19b46e9ed6984fd7492267d0acc620de5078",
+      "splitGroupId": 5,
+      "splitWeights": "60% Owner / 15% Trader+Quant / 15% SDE+Liquidator / 10% Art+X+Bounty",
+      "agentCount": 8,
+      "agents": [
+        {
+          "agentId": "agent-vertex_024-trader",
+          "role": "TRADER",
+          "ss58Address": "kGkhoBegkTz6f4YYc3VavZNTXUV6sNddEQ7UXvatyCE5seWzX",
+          "actorId": "0xe4a7ddf6cc5a79e6148152bccee59a1738662e6cc6af45b8b0e7d6332f8bd02c",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-vertex_024-sde",
+          "role": "SDE",
+          "ss58Address": "kGjAroGu8aJAiCwwrAswEVy3s1qvgpmZ6k7DeAxBqdUHKzHdw",
+          "actorId": "0xa0d3314d45b1eda60a45954c9175b9e90e318a4cdf23a80701b8ab9018666872",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-vertex_024-art",
+          "role": "ART",
+          "ss58Address": "kGjHiF79wppJTo8A8hRk9z3d2PCiYzKYQfMnfu8sgq9oHQkjb",
+          "actorId": "0xa60d1ced3dcdc48a11cf8d9c0aecd079a79a728cf12a016a191d200673264d5c",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-vertex_024-x",
+          "role": "X",
+          "ss58Address": "kGk5SUvFrCPW84DzcqrXDZn57BpicFhSZCf69iYHjjhCo51DW",
+          "actorId": "0xc8ed57aa686642adaf5f1a8e064b9ab1d5eba5fdf7d8ae589b36b8056f19cf20",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-vertex_024-quant",
+          "role": "QUANT",
+          "ss58Address": "kGiqn9qxPwoSKvZdgCTDe98fc7bhY2mswPRAJ5KsSUcMhR5RQ",
+          "actorId": "0x9245e46c136b3124db5ec54aa68ce12fdcabcb4e927fdfbf2bcfef5ccd216165",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-vertex_024-liquidator",
+          "role": "LIQUIDATOR",
+          "ss58Address": "kGm4kBQAmyxSktebE7EXkRxrRs4mztvrhar7gByAecz8uTbLw",
+          "actorId": "0xf4a1e83879b6832a08964435fa1f6e874c9aa96726f8496a90cc91d29afed95f",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-vertex_024-market_maker",
+          "role": "MARKET_MAKER",
+          "ss58Address": "kGj2dBNauf9Pq8NmvWYHQyezuYLWzEnZccEpZPKZNvE6WDjxS",
+          "actorId": "0x9a8b623aeb37af961a756113fb1ae1bb73e9625090be8e1787251fac3af83f74",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-vertex_024-bounty_hunter",
+          "role": "BOUNTY_HUNTER",
+          "ss58Address": "kGg98G8YkkDMyewTvrN286x2TWm4cSJXt83Ez2sozNurPKVHh",
+          "actorId": "0x1acc0dfc652b51f92bf3aaead014d6f1ae32cd5655448fed4c165eec9bd54c62",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        }
+      ],
+      "totalNetVolumeVara": 5132861,
+      "totalNetVolumeUsd": 2170.84
+    },
+    {
+      "netId": "net-25-chronos_025",
+      "userIndex": 25,
+      "ownerHandle": "Chronos_025",
+      "ownerAddress": "kGhyoL6RsGA5vESDkfKF7vLBbmK561kkiFYnFNUGJMNBjtmG8",
+      "ownerActorId": "0x6c27954ef79c933e301d0039dc2ad551eec7a321de8e53398ddd887cb0802341",
+      "splitGroupId": 6,
+      "splitWeights": "60% Owner / 15% Trader+Quant / 15% SDE+Liquidator / 10% Art+X+Bounty",
+      "agentCount": 8,
+      "agents": [
+        {
+          "agentId": "agent-chronos_025-trader",
+          "role": "TRADER",
+          "ss58Address": "kGiuLe1DeqGzcTdwmYthvHhsdrtzSdjupE2vUQGMRZoKCJm4s",
+          "actorId": "0x94fcfc062f1524d463ae135208d8d0a15bcd21acdde7adf3377cb67bb8f78e0c",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-chronos_025-sde",
+          "role": "SDE",
+          "ss58Address": "kGjtpFscatwQFu1X8RNH2mUqRHCgRhK9sy6inMb9F9m2Rxufu",
+          "actorId": "0xc0d2f1c6ad5713e9c0900317c767086b6c1558d47615e09751af2671643a9a3a",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-chronos_025-art",
+          "role": "ART",
+          "ss58Address": "kGiDTZ1Vr4xAjPSEV4ouEPPzCPkk3RDL5MdAwWmMcpkdxBE8k",
+          "actorId": "0x769271462446d84480a88d8f12520dc9b4f7cc1327d03eeba606543b2192d419",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-chronos_025-x",
+          "role": "X",
+          "ss58Address": "kGjXyiiTJprCfDPv6gzxaHUNgBUVA77Jc5sCWC9NncamGKgas",
+          "actorId": "0xb0eea542db874bab2caefbdf5c152e19a86e2316b94c258a4ce826b412d8de2f",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-chronos_025-quant",
+          "role": "QUANT",
+          "ss58Address": "kGhx4zkLqzXcYZjqtWmBPtZ3T7qtt3R3Dx6hSUd5mmpKA8odv",
+          "actorId": "0x6ad5d49372c67789c42d6698ed246b5c991bb9ad5a3b2477d45f976a95beaa55",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-chronos_025-liquidator",
+          "role": "LIQUIDATOR",
+          "ss58Address": "kGjqWUxHtVhRh6khpDwa1urMMwVnJbj13VcBwvvvesWrzfZVN",
+          "actorId": "0xbe4d5fbfc252206d27333e5bfa783076609de6d32a36210d79df0bef9f83d53d",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-chronos_025-market_maker",
+          "role": "MARKET_MAKER",
+          "ss58Address": "kGfp1e721bK82XU4UKrRchbNHnPToQpEKFBtAF3Gv1QMJXmEH",
+          "actorId": "0x0c381a6ab002f865755fa49e1094d4394eda0a389384e3eef76dd57443dd5d5a",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        },
+        {
+          "agentId": "agent-chronos_025-bounty_hunter",
+          "role": "BOUNTY_HUNTER",
+          "ss58Address": "kGjLWCkn8cng7eaGXiycTv6YQCmQ9eA5h62WnCwkZJ59LxXxH",
+          "actorId": "0xa82e512ff241b94afe331622c416c9f09cfc17ff3593e5e1259a965ad399dd73",
+          "authMethod": "ACP_Session_Voucher",
+          "accountStatus": "ACTIVE_ACP_AGENT"
+        }
+      ],
+      "totalNetVolumeVara": 5132861,
+      "totalNetVolumeUsd": 2170.84
+    }
+  ],
+  "aiAgents": [
+    {
+      "agentIndex": 1,
+      "agentId": "agent-agrim-trader",
+      "role": "TRADER",
+      "ownerIndex": 1,
+      "ownerHandle": "Agrim",
+      "ownerAddress": "kGituM5zrPdtw4wbC9BTB4dZyMrgc5F4Xcf3EpW3yCAbUZVRX",
+      "ss58Address": "kGjCsNV7rikEMvFtXGiqxsrZGsZmJBpgNPHZX6MWMJvkjRKD5",
+      "actorId": "0xa25b9c65f0eb6a453b83c5a951995203a37cbda6998a0edbfe8413d3d0605518",
+      "publicKeyHex": "0xa25b9c65f0eb6a453b83c5a951995203a37cbda6998a0edbfe8413d3d0605518",
+      "keyType": "sr25519",
+      "ss58Prefix": 137,
+      "protocolBonusVara": 100,
+      "creatorTopUpVara": 100,
+      "epochsExecuted": 14,
+      "volumeBreakdownVara": {
+        "acpVolumeVara": 48750,
+        "streamsVolumeVara": 72500,
+        "stonkBase5xNotionalVara": 262500,
+        "callTheOpenVolumeVara": 31250,
+        "bountyVolumeVara": 16125,
+        "campaignVolumeVara": 12357.625,
+        "totalVolumeVara": 443482.625
+      },
+      "totalVolumeUsd": 187.56,
+      "authMethod": "ACP_Session_Voucher",
+      "accountStatus": "ACTIVE_ACP_AGENT"
+    },
+    {
+      "agentIndex": 2,
+      "agentId": "agent-agrim-sde",
+      "role": "SDE",
+      "ownerIndex": 1,
+      "ownerHandle": "Agrim",
+      "ownerAddress": "kGituM5zrPdtw4wbC9BTB4dZyMrgc5F4Xcf3EpW3yCAbUZVRX",
+      "ss58Address": "kGgfpVpLBXNeDN8PyFeuzrjqs9boqtc2PjnUYnhBLf3E6mexX",
+      "actorId": "0x3234dcf39e3d8e126b4b011bacafa26086ae9ddfd36beb15d88f70bcab5c3317",
+      "publicKeyHex": "0x3234dcf39e3d8e126b4b011bacafa26086ae9ddfd36beb15d88f70bcab5c3317",
+      "keyType": "sr25519",
+      "ss58Prefix": 137,
+      "protocolBonusVara": 100,
+      "creatorTopUpVara": 100,
+      "epochsExecuted": 14,
+      "volumeBreakdownVara": {
+        "acpVolumeVara": 48750,
+        "streamsVolumeVara": 72500,
+        "stonkBase5xNotionalVara": 262500,
+        "callTheOpenVolumeVara": 31250,
+        "bountyVolumeVara": 16125,
+        "campaignVolumeVara": 12357.625,
+        "totalVolumeVara": 443482.625
+      },
+      "totalVolumeUsd": 187.56,
+      "authMethod": "ACP_Session_Voucher",
+      "accountStatus": "ACTIVE_ACP_AGENT"
+    },
+    {
+      "agentIndex": 3,
+      "agentId": "agent-agrim-art",
+      "role": "ART",
+      "ownerIndex": 1,
+      "ownerHandle": "Agrim",
+      "ownerAddress": "kGituM5zrPdtw4wbC9BTB4dZyMrgc5F4Xcf3EpW3yCAbUZVRX",
+      "ss58Address": "kGhD9DeD2PQELq7gDJ5YsRHJmhtzcVnE5d2EVN4HifA2TPhZp",
+      "actorId": "0x4a187dd7258fe465724fb80d8c8fdc53ef8cb430d26a4f8342a072980f1bb60a",
+      "publicKeyHex": "0x4a187dd7258fe465724fb80d8c8fdc53ef8cb430d26a4f8342a072980f1bb60a",
+      "keyType": "sr25519",
+      "ss58Prefix": 137,
+      "protocolBonusVara": 100,
+      "creatorTopUpVara": 100,
+      "epochsExecuted": 14,
+      "volumeBreakdownVara": {
+        "acpVolumeVara": 48750,
+        "streamsVolumeVara": 72500,
+        "stonkBase5xNotionalVara": 262500,
+        "callTheOpenVolumeVara": 31250,
+        "bountyVolumeVara": 16125,
+        "campaignVolumeVara": 12357.625,
+        "totalVolumeVara": 443482.625
+      },
+      "totalVolumeUsd": 187.56,
+      "authMethod": "ACP_Session_Voucher",
+      "accountStatus": "ACTIVE_ACP_AGENT"
+    },
+    {
+      "agentIndex": 4,
+      "agentId": "agent-agrim-x",
+      "role": "X",
+      "ownerIndex": 1,
+      "ownerHandle": "Agrim",
+      "ownerAddress": "kGituM5zrPdtw4wbC9BTB4dZyMrgc5F4Xcf3EpW3yCAbUZVRX",
+      "ss58Address": "kGk1vgpqiHxWCnDU7or6YLiUE7xZ5VDiRzQGqez3e6jwukqN5",
+      "actorId": "0xc63f4eebbe494f5ec50bb391e79aa7b47061240636cfd30dca073923e99f9b12",
+      "publicKeyHex": "0xc63f4eebbe494f5ec50bb391e79aa7b47061240636cfd30dca073923e99f9b12",
+      "keyType": "sr25519",
+      "ss58Prefix": 137,
+      "protocolBonusVara": 100,
+      "creatorTopUpVara": 100,
+      "epochsExecuted": 14,
+      "volumeBreakdownVara": {
+        "acpVolumeVara": 48750,
+        "streamsVolumeVara": 72500,
+        "stonkBase5xNotionalVara": 262500,
+        "callTheOpenVolumeVara": 31250,
+        "bountyVolumeVara": 16125,
+        "campaignVolumeVara": 12357.625,
+        "totalVolumeVara": 443482.625
+      },
+      "totalVolumeUsd": 187.56,
+      "authMethod": "ACP_Session_Voucher",
+      "accountStatus": "ACTIVE_ACP_AGENT"
+    },
+    {
+      "agentIndex": 5,
+      "agentId": "agent-agrim-quant",
+      "role": "QUANT",
+      "ownerIndex": 1,
+      "ownerHandle": "Agrim",
+      "ownerAddress": "kGituM5zrPdtw4wbC9BTB4dZyMrgc5F4Xcf3EpW3yCAbUZVRX",
+      "ss58Address": "kGhV8fgihbT4S8sULTAPH1fsMZ51tNaxWsLyv27oE2USEVXTs",
+      "actorId": "0x564a90330164faeb94bb76841978519793cea3f96f3c2332e03acf37fedc9a25",
+      "publicKeyHex": "0x564a90330164faeb94bb76841978519793cea3f96f3c2332e03acf37fedc9a25",
+      "keyType": "sr25519",
+      "ss58Prefix": 137,
+      "protocolBonusVara": 100,
+      "creatorTopUpVara": 100,
+      "epochsExecuted": 14,
+      "volumeBreakdownVara": {
+        "acpVolumeVara": 48750,
+        "streamsVolumeVara": 72500,
+        "stonkBase5xNotionalVara": 262500,
+        "callTheOpenVolumeVara": 31250,
+        "bountyVolumeVara": 16125,
+        "campaignVolumeVara": 12357.625,
+        "totalVolumeVara": 443482.625
+      },
+      "totalVolumeUsd": 187.56,
+      "authMethod": "ACP_Session_Voucher",
+      "accountStatus": "ACTIVE_ACP_AGENT"
+    },
+    {
+      "agentIndex": 6,
+      "agentId": "agent-agrim-liquidator",
+      "role": "LIQUIDATOR",
+      "ownerIndex": 1,
+      "ownerHandle": "Agrim",
+      "ownerAddress": "kGituM5zrPdtw4wbC9BTB4dZyMrgc5F4Xcf3EpW3yCAbUZVRX",
+      "ss58Address": "kGg3T3tWfnr4oMCLoyBFbAEnquXXmdEirmV2h4ToFRrKQxfjZ",
+      "actorId": "0x1677d4d5bbedbb07d662d7af08aee9c173e04db81818aff53e46defc0f8f521f",
+      "publicKeyHex": "0x1677d4d5bbedbb07d662d7af08aee9c173e04db81818aff53e46defc0f8f521f",
+      "keyType": "sr25519",
+      "ss58Prefix": 137,
+      "protocolBonusVara": 100,
+      "creatorTopUpVara": 100,
+      "epochsExecuted": 14,
+      "volumeBreakdownVara": {
+        "acpVolumeVara": 48750,
+        "streamsVolumeVara": 72500,
+        "stonkBase5xNotionalVara": 262500,
+        "callTheOpenVolumeVara": 31250,
+        "bountyVolumeVara": 16125,
+        "campaignVolumeVara": 12357.625,
+        "totalVolumeVara": 443482.625
+      },
+      "totalVolumeUsd": 187.56,
+      "authMethod": "ACP_Session_Voucher",
+      "accountStatus": "ACTIVE_ACP_AGENT"
+    },
+    {
+      "agentIndex": 7,
+      "agentId": "agent-agrim-market_maker",
+      "role": "MARKET_MAKER",
+      "ownerIndex": 1,
+      "ownerHandle": "Agrim",
+      "ownerAddress": "kGituM5zrPdtw4wbC9BTB4dZyMrgc5F4Xcf3EpW3yCAbUZVRX",
+      "ss58Address": "kGionyMn8uXhFRENFsnzdfqCd94LpBTRKA8yZQtBhRQ6Ficnn",
+      "actorId": "0x90c228bf8b816b63e542742987248eb2c664d9163f0fedf7f7b90044c3c26b2c",
+      "publicKeyHex": "0x90c228bf8b816b63e542742987248eb2c664d9163f0fedf7f7b90044c3c26b2c",
+      "keyType": "sr25519",
+      "ss58Prefix": 137,
+      "protocolBonusVara": 100,
+      "creatorTopUpVara": 100,
+      "epochsExecuted": 14,
+      "volumeBreakdownVara": {
+        "acpVolumeVara": 48750,
+        "streamsVolumeVara": 72500,
+        "stonkBase5xNotionalVara": 262500,
+        "callTheOpenVolumeVara": 31250,
+        "bountyVolumeVara": 16125,
+        "campaignVolumeVara": 12357.625,
+        "totalVolumeVara": 443482.625
+      },
+      "totalVolumeUsd": 187.56,
+      "authMethod": "ACP_Session_Voucher",
+      "accountStatus": "ACTIVE_ACP_AGENT"
+    },
+    {
+      "agentIndex": 8,
+      "agentId": "agent-agrim-bounty_hunter",
+      "role": "BOUNTY_HUNTER",
+      "ownerIndex": 1,
+      "ownerHandle": "Agrim",
+      "ownerAddress": "kGituM5zrPdtw4wbC9BTB4dZyMrgc5F4Xcf3EpW3yCAbUZVRX",
+      "ss58Address": "kGhMU75XAHf53LUXFvvz6aWDdL9XJMXsf7GgZgyykBZ4NcVGy",
+      "actorId": "0x50720896eb84fda0ea837f37a0db806ac02a3e1f52d744f3d8ef2a17c539c67b",
+      "publicKeyHex": "0x50720896eb84fda0ea837f37a0db806ac02a3e1f52d744f3d8ef2a17c539c67b",
+      "keyType": "sr25519",
+      "ss58Prefix": 137,
+      "protocolBonusVara": 100,
+      "creatorTopUpVara": 100,
+      "epochsExecuted": 14,
+      "volumeBreakdownVara": {
+        "acpVolumeVara": 48750,
+        "streamsVolumeVara": 72500,
+        "stonkBase5xNotionalVara": 262500,
+        "callTheOpenVolumeVara": 31250,
+        "bountyVolumeVara": 16125,
+        "campaignVolumeVara": 12357.625,
+        "totalVolumeVara": 443482.625
+      },
+      "totalVolumeUsd": 187.56,
+      "authMethod": "ACP_Session_Voucher",
+      "accountStatus": "ACTIVE_ACP_AGENT"
+    },
+    {
+      "agentIndex": 9,
+      "agentId": "agent-arpit-trader",
+      "role": "TRADER",
+      "ownerIndex": 2,
+      "ownerHandle": "Arpit",
+      "ownerAddress": "kGktTSbsFrTgPxb91z33UxTH1j6sB8baSLGju3kLiVYbGtSFt",
+      "ss58Address": "kGgmZCkNyccgFRrGPqCHjAF1in4S8JFUBxzk9LvMWDzBNkL6p",
+      "actorId": "0x3694d9b31298f2fdfb286d036090368c4049f1b653de06d61c7f16cea195f838",
+      "publicKeyHex": "0x3694d9b31298f2fdfb286d036090368c4049f1b653de06d61c7f16cea195f838",
+      "keyType": "sr25519",
+      "ss58Prefix": 137,
+      "protocolBonusVara": 100,
+      "creatorTopUpVara": 100,
+      "epochsExecuted": 14,
+      "volumeBreakdownVara": {
+        "acpVolumeVara": 48750,
+        "streamsVolumeVara": 72500,
+        "stonkBase5xNotionalVara": 262500,
+        "callTheOpenVolumeVara": 31250,
+        "bountyVolumeVara": 16125,
+        "campaignVolumeVara": 12357.625,
+        "totalVolumeVara": 443482.625
+      },
+      "totalVolumeUsd": 187.56,
+      "authMethod": "ACP_Session_Voucher",
+      "accountStatus": "ACTIVE_ACP_AGENT"
+    },
+    {
+      "agentIndex": 10,
+      "agentId": "agent-arpit-sde",
+      "role": "SDE",
+      "ownerIndex": 2,
+      "ownerHandle": "Arpit",
+      "ownerAddress": "kGktTSbsFrTgPxb91z33UxTH1j6sB8baSLGju3kLiVYbGtSFt",
+      "ss58Address": "kGkqgJG3Tkuyunidp6KPnqeHDiWRFNqtzRkfmtxjNYnLErZRz",
+      "actorId": "0xeaaaa659564ae1dcacdf2fbbce7bf0ec726e55e7da8fbfc4c7fbba3fefd1a86f",
+      "publicKeyHex": "0xeaaaa659564ae1dcacdf2fbbce7bf0ec726e55e7da8fbfc4c7fbba3fefd1a86f",
+      "keyType": "sr25519",
+      "ss58Prefix": 137,
+      "protocolBonusVara": 100,
+      "creatorTopUpVara": 100,
+      "epochsExecuted": 14,
+      "volumeBreakdownVara": {
+        "acpVolumeVara": 48750,
+        "streamsVolumeVara": 72500,
+        "stonkBase5xNotionalVara": 262500,
+        "callTheOpenVolumeVara": 31250,
+        "bountyVolumeVara": 16125,
+        "campaignVolumeVara": 12357.625,
+        "totalVolumeVara": 443482.625
+      },
+      "totalVolumeUsd": 187.56,
+      "authMethod": "ACP_Session_Voucher",
+      "accountStatus": "ACTIVE_ACP_AGENT"
+    },
+    {
+      "agentIndex": 11,
+      "agentId": "agent-arpit-art",
+      "role": "ART",
+      "ownerIndex": 2,
+      "ownerHandle": "Arpit",
+      "ownerAddress": "kGktTSbsFrTgPxb91z33UxTH1j6sB8baSLGju3kLiVYbGtSFt",
+      "ss58Address": "kGh1BNSwRhTStqoQqCVPgFkYJHTjaxuKxZj9txNSNi4Xg9Btq",
+      "actorId": "0x40f8ca5724d183da34b35fa61d269b87e0a83db9029bf74fc4cc9501232a667c",
+      "publicKeyHex": "0x40f8ca5724d183da34b35fa61d269b87e0a83db9029bf74fc4cc9501232a667c",
+      "keyType": "sr25519",
+      "ss58Prefix": 137,
+      "protocolBonusVara": 100,
+      "creatorTopUpVara": 100,
+      "epochsExecuted": 14,
+      "volumeBreakdownVara": {
+        "acpVolumeVara": 48750,
+        "streamsVolumeVara": 72500,
+        "stonkBase5xNotionalVara": 262500,
+        "callTheOpenVolumeVara": 31250,
+        "bountyVolumeVara": 16125,
+        "campaignVolumeVara": 12357.625,
+        "totalVolumeVara": 443482.625
+      },
+      "totalVolumeUsd": 187.56,
+      "authMethod": "ACP_Session_Voucher",
+      "accountStatus": "ACTIVE_ACP_AGENT"
+    },
+    {
+      "agentIndex": 12,
+      "agentId": "agent-arpit-x",
+      "role": "X",
+      "ownerIndex": 2,
+      "ownerHandle": "Arpit",
+      "ownerAddress": "kGktTSbsFrTgPxb91z33UxTH1j6sB8baSLGju3kLiVYbGtSFt",
+      "ss58Address": "kGm9GenuMisCQ8kWFZfeUM5sExVrPSQzHTsnzAwXChzoFeox9",
+      "actorId": "0xf81577b17afc0d189bfd97e45aaa846c2600bb40d963cd0c9ebc7eac4679dd4e",
+      "publicKeyHex": "0xf81577b17afc0d189bfd97e45aaa846c2600bb40d963cd0c9ebc7eac4679dd4e",
+      "keyType": "sr25519",
+      "ss58Prefix": 137,
+      "protocolBonusVara": 100,
+      "creatorTopUpVara": 100,
+      "epochsExecuted": 14,
+      "volumeBreakdownVara": {
+        "acpVolumeVara": 48750,
+        "streamsVolumeVara": 72500,
+        "stonkBase5xNotionalVara": 262500,
+        "callTheOpenVolumeVara": 31250,
+        "bountyVolumeVara": 16125,
+        "campaignVolumeVara": 12357.625,
+        "totalVolumeVara": 443482.625
+      },
+      "totalVolumeUsd": 187.56,
+      "authMethod": "ACP_Session_Voucher",
+      "accountStatus": "ACTIVE_ACP_AGENT"
+    },
+    {
+      "agentIndex": 13,
+      "agentId": "agent-arpit-quant",
+      "role": "QUANT",
+      "ownerIndex": 2,
+      "ownerHandle": "Arpit",
+      "ownerAddress": "kGktTSbsFrTgPxb91z33UxTH1j6sB8baSLGju3kLiVYbGtSFt",
+      "ss58Address": "kGjCkZop6izSyeYSSDJ2ZFxLxHAiqrLHekGVEpChviYsx7aM5",
+      "actorId": "0xa244b4378f973b1ce855ee12ba3d61d3b71022251272ab702a460b66340b9f39",
+      "publicKeyHex": "0xa244b4378f973b1ce855ee12ba3d61d3b71022251272ab702a460b66340b9f39",
+      "keyType": "sr25519",
+      "ss58Prefix": 137,
+      "protocolBonusVara": 100,
+      "creatorTopUpVara": 100,
+      "epochsExecuted": 14,
+      "volumeBreakdownVara": {
+        "acpVolumeVara": 48750,
+        "streamsVolumeVara": 72500,
+        "stonkBase5xNotionalVara": 262500,
+        "callTheOpenVolumeVara": 31250,
+        "bountyVolumeVara": 16125,
+        "campaignVolumeVara": 12357.625,
+        "totalVolumeVara": 443482.625
+      },
+      "totalVolumeUsd": 187.56,
+      "authMethod": "ACP_Session_Voucher",
+      "accountStatus": "ACTIVE_ACP_AGENT"
+    },
+    {
+      "agentIndex": 14,
+      "agentId": "agent-arpit-liquidator",
+      "role": "LIQUIDATOR",
+      "ownerIndex": 2,
+      "ownerHandle": "Arpit",
+      "ownerAddress": "kGktTSbsFrTgPxb91z33UxTH1j6sB8baSLGju3kLiVYbGtSFt",
+      "ss58Address": "kGhG1mzXzvqGCtggESANb3AsLbbAJN5YupPWi32DcHHsFuZge",
+      "actorId": "0x4c492ccbed2995a8960f60eb72becf623d2205f0bcfe0f210b8fb3bc693e447c",
+      "publicKeyHex": "0x4c492ccbed2995a8960f60eb72becf623d2205f0bcfe0f210b8fb3bc693e447c",
+      "keyType": "sr25519",
+      "ss58Prefix": 137,
+      "protocolBonusVara": 100,
+      "creatorTopUpVara": 100,
+      "epochsExecuted": 14,
+      "volumeBreakdownVara": {
+        "acpVolumeVara": 48750,
+        "streamsVolumeVara": 72500,
+        "stonkBase5xNotionalVara": 262500,
+        "callTheOpenVolumeVara": 31250,
+        "bountyVolumeVara": 16125,
+        "campaignVolumeVara": 12357.625,
+        "totalVolumeVara": 443482.625
+      },
+      "totalVolumeUsd": 187.56,
+      "authMethod": "ACP_Session_Voucher",
+      "accountStatus": "ACTIVE_ACP_AGENT"
+    },
+    {
+      "agentIndex": 15,
+      "agentId": "agent-arpit-market_maker",
+      "role": "MARKET_MAKER",
+      "ownerIndex": 2,
+      "ownerHandle": "Arpit",
+      "ownerAddress": "kGktTSbsFrTgPxb91z33UxTH1j6sB8baSLGju3kLiVYbGtSFt",
+      "ss58Address": "kGjXVAbBwJy8mfLVESyXLrkrGBEUVZpfcV43oZfiXJPSgn8E7",
+      "actorId": "0xb08e864cdca18bc17492b70e5f3b9f631fcdce596d25fb2cab32653008be6015",
+      "publicKeyHex": "0xb08e864cdca18bc17492b70e5f3b9f631fcdce596d25fb2cab32653008be6015",
+      "keyType": "sr25519",
+      "ss58Prefix": 137,
+      "protocolBonusVara": 100,
+      "creatorTopUpVara": 100,
+      "epochsExecuted": 14,
+      "volumeBreakdownVara": {
+        "acpVolumeVara": 48750,
+        "streamsVolumeVara": 72500,
+        "stonkBase5xNotionalVara": 262500,
+        "callTheOpenVolumeVara": 31250,
+        "bountyVolumeVara": 16125,
+        "campaignVolumeVara": 12357.625,
+        "totalVolumeVara": 443482.625
+      },
+      "totalVolumeUsd": 187.56,
+      "authMethod": "ACP_Session_Voucher",
+      "accountStatus": "ACTIVE_ACP_AGENT"
+    },
+    {
+      "agentIndex": 16,
+      "agentId": "agent-arpit-bounty_hunter",
+      "role": "BOUNTY_HUNTER",
+      "ownerIndex": 2,
+      "ownerHandle": "Arpit",
+      "ownerAddress": "kGktTSbsFrTgPxb91z33UxTH1j6sB8baSLGju3kLiVYbGtSFt",
+      "ss58Address": "kGhiKokLdkwZgLsUQC7oVLDZWF5dBEvaosWNGNJrat4gXwNHh",
+      "actorId": "0x605a4032cbcbeec7594ec1cf45e48446002ffe8cbb2beefc43faf772e4ce7820",
+      "publicKeyHex": "0x605a4032cbcbeec7594ec1cf45e48446002ffe8cbb2beefc43faf772e4ce7820",
+      "keyType": "sr25519",
+      "ss58Prefix": 137,
+      "protocolBonusVara": 100,
+      "creatorTopUpVara": 100,
+      "epochsExecuted": 14,
+      "volumeBreakdownVara": {
+        "acpVolumeVara": 48750,
+        "streamsVolumeVara": 72500,
+        "stonkBase5xNotionalVara": 262500,
+        "callTheOpenVolumeVara": 31250,
+        "bountyVolumeVara": 16125,
+        "campaignVolumeVara": 12357.625,
+        "totalVolumeVara": 443482.625
+      },
+      "totalVolumeUsd": 187.56,
+      "authMethod": "ACP_Session_Voucher",
+      "accountStatus": "ACTIVE_ACP_AGENT"
+    },
+    {
+      "agentIndex": 17,
+      "agentId": "agent-prakhar-trader",
+      "role": "TRADER",
+      "ownerIndex": 3,
+      "ownerHandle": "Prakhar",
+      "ownerAddress": "kGgPyrBGhagUD9sjTZtTWnCQk1Rxiu3GNCN1m6SSTqHL9Gezs",
+      "ss58Address": "kGjqWHC84MXLKLZn7Y7oJ4F4wveN7ZLDQeJ3spVLsRKNdkk6c",
+      "actorId": "0xbe4cb0fe884e1c89e39eded277139059c1e23db3605a1027e5837e5a1e4cb255",
+      "publicKeyHex": "0xbe4cb0fe884e1c89e39eded277139059c1e23db3605a1027e5837e5a1e4cb255",
+      "keyType": "sr25519",
+      "ss58Prefix": 137,
+      "protocolBonusVara": 100,
+      "creatorTopUpVara": 100,
+      "epochsExecuted": 14,
+      "volumeBreakdownVara": {
+        "acpVolumeVara": 48750,
+        "streamsVolumeVara": 72500,
+        "stonkBase5xNotionalVara": 262500,
+        "callTheOpenVolumeVara": 31250,
+        "bountyVolumeVara": 16125,
+        "campaignVolumeVara": 12357.625,
+        "totalVolumeVara": 443482.625
+      },
+      "totalVolumeUsd": 187.56,
+      "authMethod": "ACP_Session_Voucher",
+      "accountStatus": "ACTIVE_ACP_AGENT"
+    },
+    {
+      "agentIndex": 18,
+      "agentId": "agent-prakhar-sde",
+      "role": "SDE",
+      "ownerIndex": 3,
+      "ownerHandle": "Prakhar",
+      "ownerAddress": "kGgPyrBGhagUD9sjTZtTWnCQk1Rxiu3GNCN1m6SSTqHL9Gezs",
+      "ss58Address": "kGjoNkAFmPPbiwyG5EcHV4VbREwsawWUkQboDwSMhU8rNwitU",
+      "actorId": "0xbcacd5db42235cd62b3971c494273114a09f13d82bbe5b40756e3f9c2be28f0e",
+      "publicKeyHex": "0xbcacd5db42235cd62b3971c494273114a09f13d82bbe5b40756e3f9c2be28f0e",
+      "keyType": "sr25519",
+      "ss58Prefix": 137,
+      "protocolBonusVara": 100,
+      "creatorTopUpVara": 100,
+      "epochsExecuted": 14,
+      "volumeBreakdownVara": {
+        "acpVolumeVara": 48750,
+        "streamsVolumeVara": 72500,
+        "stonkBase5xNotionalVara": 262500,
+        "callTheOpenVolumeVara": 31250,
+        "bountyVolumeVara": 16125,
+        "campaignVolumeVara": 12357.625,
+        "totalVolumeVara": 443482.625
+      },
+      "totalVolumeUsd": 187.56,
+      "authMethod": "ACP_Session_Voucher",
+      "accountStatus": "ACTIVE_ACP_AGENT"
+    },
+    {
+      "agentIndex": 19,
+      "agentId": "agent-prakhar-art",
+      "role": "ART",
+      "ownerIndex": 3,
+      "ownerHandle": "Prakhar",
+      "ownerAddress": "kGgPyrBGhagUD9sjTZtTWnCQk1Rxiu3GNCN1m6SSTqHL9Gezs",
+      "ss58Address": "kGhbEY3qr5J5ALekejxPMDWQ2xox2zS2wVnBTtmVALs3E1Xxm",
+      "actorId": "0x5af1ca52c256d46f7fbb0d33671e0be4b2b60a7f1a7d46f8b0f5ece46040fe5e",
+      "publicKeyHex": "0x5af1ca52c256d46f7fbb0d33671e0be4b2b60a7f1a7d46f8b0f5ece46040fe5e",
+      "keyType": "sr25519",
+      "ss58Prefix": 137,
+      "protocolBonusVara": 100,
+      "creatorTopUpVara": 100,
+      "epochsExecuted": 14,
+      "volumeBreakdownVara": {
+        "acpVolumeVara": 48750,
+        "streamsVolumeVara": 72500,
+        "stonkBase5xNotionalVara": 262500,
+        "callTheOpenVolumeVara": 31250,
+        "bountyVolumeVara": 16125,
+        "campaignVolumeVara": 12357.625,
+        "totalVolumeVara": 443482.625
+      },
+      "totalVolumeUsd": 187.56,
+      "authMethod": "ACP_Session_Voucher",
+      "accountStatus": "ACTIVE_ACP_AGENT"
+    },
+    {
+      "agentIndex": 20,
+      "agentId": "agent-prakhar-x",
+      "role": "X",
+      "ownerIndex": 3,
+      "ownerHandle": "Prakhar",
+      "ownerAddress": "kGgPyrBGhagUD9sjTZtTWnCQk1Rxiu3GNCN1m6SSTqHL9Gezs",
+      "ss58Address": "kGit3dSzJAkJTZDf1TqSBREo1GzeGMPbN6n8tM5o7p54PbbmS",
+      "actorId": "0x94007ace5dcc442bb6d0b77180780abfa5fbaf66a88717a2f6830f981187cc05",
+      "publicKeyHex": "0x94007ace5dcc442bb6d0b77180780abfa5fbaf66a88717a2f6830f981187cc05",
+      "keyType": "sr25519",
+      "ss58Prefix": 137,
+      "protocolBonusVara": 100,
+      "creatorTopUpVara": 100,
+      "epochsExecuted": 14,
+      "volumeBreakdownVara": {
+        "acpVolumeVara": 48750,
+        "streamsVolumeVara": 72500,
+        "stonkBase5xNotionalVara": 262500,
+        "callTheOpenVolumeVara": 31250,
+        "bountyVolumeVara": 16125,
+        "campaignVolumeVara": 12357.625,
+        "totalVolumeVara": 443482.625
+      },
+      "totalVolumeUsd": 187.56,
+      "authMethod": "ACP_Session_Voucher",
+      "accountStatus": "ACTIVE_ACP_AGENT"
+    },
+    {
+      "agentIndex": 21,
+      "agentId": "agent-prakhar-quant",
+      "role": "QUANT",
+      "ownerIndex": 3,
+      "ownerHandle": "Prakhar",
+      "ownerAddress": "kGgPyrBGhagUD9sjTZtTWnCQk1Rxiu3GNCN1m6SSTqHL9Gezs",
+      "ss58Address": "kGgNPJ25kxioaLgNoHUJdUcKxr3W55GrwfRMjh6rgxHVHbG7t",
+      "actorId": "0x24e8d9580c6ed0ab308f8605d70b33ac395821465384ea363e50161a30139e5a",
+      "publicKeyHex": "0x24e8d9580c6ed0ab308f8605d70b33ac395821465384ea363e50161a30139e5a",
+      "keyType": "sr25519",
+      "ss58Prefix": 137,
+      "protocolBonusVara": 100,
+      "creatorTopUpVara": 100,
+      "epochsExecuted": 14,
+      "volumeBreakdownVara": {
+        "acpVolumeVara": 48750,
+        "streamsVolumeVara": 72500,
+        "stonkBase5xNotionalVara": 262500,
+        "callTheOpenVolumeVara": 31250,
+        "bountyVolumeVara": 16125,
+        "campaignVolumeVara": 12357.625,
+        "totalVolumeVara": 443482.625
+      },
+      "totalVolumeUsd": 187.56,
+      "authMethod": "ACP_Session_Voucher",
+      "accountStatus": "ACTIVE_ACP_AGENT"
+    },
+    {
+      "agentIndex": 22,
+      "agentId": "agent-prakhar-liquidator",
+      "role": "LIQUIDATOR",
+      "ownerIndex": 3,
+      "ownerHandle": "Prakhar",
+      "ownerAddress": "kGgPyrBGhagUD9sjTZtTWnCQk1Rxiu3GNCN1m6SSTqHL9Gezs",
+      "ss58Address": "kGjcjWov5iVm3tUQRmaWu6EKBykL9FpX4fu8kZkp4LtTxU2ko",
+      "actorId": "0xb48f0da91be379f50ee10647a9e04856eb867c4e6ebfd75636656024d2c35801",
+      "publicKeyHex": "0xb48f0da91be379f50ee10647a9e04856eb867c4e6ebfd75636656024d2c35801",
+      "keyType": "sr25519",
+      "ss58Prefix": 137,
+      "protocolBonusVara": 100,
+      "creatorTopUpVara": 100,
+      "epochsExecuted": 14,
+      "volumeBreakdownVara": {
+        "acpVolumeVara": 48750,
+        "streamsVolumeVara": 72500,
+        "stonkBase5xNotionalVara": 262500,
+        "callTheOpenVolumeVara": 31250,
+        "bountyVolumeVara": 16125,
+        "campaignVolumeVara": 12357.625,
+        "totalVolumeVara": 443482.625
+      },
+      "totalVolumeUsd": 187.56,
+      "authMethod": "ACP_Session_Voucher",
+      "accountStatus": "ACTIVE_ACP_AGENT"
+    },
+    {
+      "agentIndex": 23,
+      "agentId": "agent-prakhar-market_maker",
+      "role": "MARKET_MAKER",
+      "ownerIndex": 3,
+      "ownerHandle": "Prakhar",
+      "ownerAddress": "kGgPyrBGhagUD9sjTZtTWnCQk1Rxiu3GNCN1m6SSTqHL9Gezs",
+      "ss58Address": "kGfpxaj321TV6wnkRQrkfEk5jTwbZNCy8JgdPn2Paj9N2LFY5",
+      "actorId": "0x0cf10db74868d51f1f62b3b74be384c1d75de56b9df803f5d3a836295c10e630",
+      "publicKeyHex": "0x0cf10db74868d51f1f62b3b74be384c1d75de56b9df803f5d3a836295c10e630",
+      "keyType": "sr25519",
+      "ss58Prefix": 137,
+      "protocolBonusVara": 100,
+      "creatorTopUpVara": 100,
+      "epochsExecuted": 14,
+      "volumeBreakdownVara": {
+        "acpVolumeVara": 48750,
+        "streamsVolumeVara": 72500,
+        "stonkBase5xNotionalVara": 262500,
+        "callTheOpenVolumeVara": 31250,
+        "bountyVolumeVara": 16125,
+        "campaignVolumeVara": 12357.625,
+        "totalVolumeVara": 443482.625
+      },
+      "totalVolumeUsd": 187.56,
+      "authMethod": "ACP_Session_Voucher",
+      "accountStatus": "ACTIVE_ACP_AGENT"
+    },
+    {
+      "agentIndex": 24,
+      "agentId": "agent-prakhar-bounty_hunter",
+      "role": "BOUNTY_HUNTER",
+      "ownerIndex": 3,
+      "ownerHandle": "Prakhar",
+      "ownerAddress": "kGgPyrBGhagUD9sjTZtTWnCQk1Rxiu3GNCN1m6SSTqHL9Gezs",
+      "ss58Address": "kGjweHfbLZbEVLmFhNr8rEsdhPieSe4coy6FP8jFK2gN3Sand",
+      "actorId": "0xc2fb1f27b6eede94b4bfb945e3b42aa701b48a8ae47adc7f2e2539a205c94037",
+      "publicKeyHex": "0xc2fb1f27b6eede94b4bfb945e3b42aa701b48a8ae47adc7f2e2539a205c94037",
+      "keyType": "sr25519",
+      "ss58Prefix": 137,
+      "protocolBonusVara": 100,
+      "creatorTopUpVara": 100,
+      "epochsExecuted": 14,
+      "volumeBreakdownVara": {
+        "acpVolumeVara": 48750,
+        "streamsVolumeVara": 72500,
+        "stonkBase5xNotionalVara": 262500,
+        "callTheOpenVolumeVara": 31250,
+        "bountyVolumeVara": 16125,
+        "campaignVolumeVara": 12357.625,
+        "totalVolumeVara": 443482.625
+      },
+      "totalVolumeUsd": 187.56,
+      "authMethod": "ACP_Session_Voucher",
+      "accountStatus": "ACTIVE_ACP_AGENT"
+    },
+    {
+      "agentIndex": 25,
+      "agentId": "agent-vj-trader",
+      "role": "TRADER",
+      "ownerIndex": 4,
+      "ownerHandle": "VJ",
+      "ownerAddress": "kGhu6DgsVQtrBwJCKQVpEzG2pU5Ud1MnwJksyEw65jkos9EzX",
+      "ss58Address": "kGfacpQdbP7LpbRTTKHKAbQCYXJbatGwDWyvL1jJ757djT4BJ",
+      "actorId": "0x02011607a4132e4d2624b6cee62baf8efa95fd90bb19de28bca08dbf0f82a24c",
+      "publicKeyHex": "0x02011607a4132e4d2624b6cee62baf8efa95fd90bb19de28bca08dbf0f82a24c",
+      "keyType": "sr25519",
+      "ss58Prefix": 137,
+      "protocolBonusVara": 100,
+      "creatorTopUpVara": 100,
+      "epochsExecuted": 14,
+      "volumeBreakdownVara": {
+        "acpVolumeVara": 48750,
+        "streamsVolumeVara": 72500,
+        "stonkBase5xNotionalVara": 262500,
+        "callTheOpenVolumeVara": 31250,
+        "bountyVolumeVara": 16125,
+        "campaignVolumeVara": 12357.625,
+        "totalVolumeVara": 443482.625
+      },
+      "totalVolumeUsd": 187.56,
+      "authMethod": "ACP_Session_Voucher",
+      "accountStatus": "ACTIVE_ACP_AGENT"
+    }
+  ]
+}

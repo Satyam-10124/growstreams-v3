@@ -1,0 +1,19 @@
+{
+  "name": "@growstreams/agents",
+  "version": "1.0.0",
+  "description": "GrowStreams Society of AI Agents & Agent Commerce Protocol (ACP) on Vara Network",
+  "type": "module",
+  "main": "runtime/index.mjs",
+  "scripts": {
+    "start": "node runtime/autonomous-worker.mjs",
+    "test": "node --test tests/*.test.mjs"
+  },
+  "keywords": [
+    "vara",
+    "gear-protocol",
+    "sails",
+    "ai-agents",
+    "acp",
+    "growstreams"
+  ]
+}

@@ -1,0 +1,1 @@
+try{var d=Object.getOwnPropertyDescriptor(Node.prototype,"prefix");if(d&&!d.set){Object.defineProperty(Element.prototype,"prefix",{get:d.get,set:function(v){v==null?this.removeAttribute("prefix"):this.setAttribute("prefix",String(v))},configurable:true});}}catch(e){}

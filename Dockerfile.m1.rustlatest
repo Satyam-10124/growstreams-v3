@@ -1,0 +1,26 @@
+FROM rust:latest
+
+WORKDIR /build
+
+COPY m1_beta_extracted/GrowStreams_Backend-M1-beta/contracts/token-vault/ ./token-vault/
+COPY m1_beta_extracted/GrowStreams_Backend-M1-beta/contracts/stream-core/ ./stream-core/
+
+RUN cat > /build/Cargo.toml << 'EOF'
+[workspace]
+members = ["token-vault", "stream-core"]
+resolver = "2"
+
+[workspace.dependencies]
+sails-rs = "0.10"
+gstd = "1.10.0"
+parity-scale-codec = { version = "3", default-features = false, features = ["derive"] }
+scale-info = { version = "2", default-features = false, features = ["derive"] }
+EOF
+
+RUN rustup target add wasm32-unknown-unknown wasm32v1-none && rustup component add rust-src
+
+# Pass --allow-undefined to the wasm linker to fix gr_panic etc on Rust 1.81+
+ENV CARGO_TARGET_WASM32V1_NONE_RUSTFLAGS="-C link-arg=--allow-undefined"
+
+RUN cargo build --release -p token-vault
+RUN cargo build --release -p stream-core

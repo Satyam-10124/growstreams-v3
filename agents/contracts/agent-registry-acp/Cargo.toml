@@ -1,0 +1,14 @@
+[package]
+name = "agent-registry-acp"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+
+[dependencies]
+sails-rs = "0.6"
+gstd = { version = "1.6", features = ["debug"] }
+parity-scale-codec = { version = "3.6", default-features = false, features = ["derive"] }
+scale-info = { version = "2.11", default-features = false, features = ["derive"] }
+
+[build-dependencies]
+sails-rs = { version = "0.6", features = ["wasm-builder"] }

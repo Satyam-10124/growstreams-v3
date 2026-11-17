@@ -1,0 +1,1 @@
+(function(){var m={"ZElyWI":"r11","Z1f6i1h":"r23","1SEqY8":"r12","Zah30t":"r16","15J04c":"r17","ZEwIEb":"r18","Z2lCkAG":"r14","1Hfamw":"r19","Z8oQ6d":"r15","2u1fYt":"r20","1sl05O":"r21"};for(var u in m){var el=document.querySelector('astro-island[uid="'+u+'"]');if(el&&m[u])el.setAttribute("prefix",m[u]);}})();

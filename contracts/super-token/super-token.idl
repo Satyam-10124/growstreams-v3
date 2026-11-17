@@ -1,0 +1,89 @@
+// GrowStreams — Super Token IDL
+// Superfluid-style streaming VFT with buffered, flow-aware accrual:
+// receiver gains min(rate × elapsed, buffer); buffer is escrowed from the sender
+// so Σ balance_of ≤ total_supply (no phantom minting).
+
+type AccountState = struct {
+  static_balance: u128,
+  net_flow_rate: i128,
+  flow_updated_at: u64,
+};
+
+type Flow = struct {
+  rate: u128,
+  buffer: u128,
+  last_update: u64,
+};
+
+type SuperTokenMeta = struct {
+  name: str,
+  symbol: str,
+  decimals: u8,
+  underlying_token: actor_id,
+  is_native_wrapper: bool,
+  admin: actor_id,
+  total_supply: u128,
+  flow_controller_count: u32,
+};
+
+constructor {
+  New : (name: str, symbol: str, decimals: u8, underlying_token: actor_id, is_native_wrapper: bool);
+};
+
+service SuperTokenService {
+  // --- Wrap / Unwrap ---
+  Wrap : (amount: u128) -> result(null, str);
+  Unwrap : (amount: u128) -> result(null, str);
+  WrapNative : () -> result(null, str);
+  UnwrapNative : (amount: u128) -> result(null, str);
+
+  // --- VFT-compatible instant transfers ---
+  Transfer : (to: actor_id, amount: u128) -> bool;
+  Approve : (spender: actor_id, amount: u128) -> bool;
+  TransferFrom : (from: actor_id, to: actor_id, amount: u128) -> bool;
+
+  // --- Flow control (called by stream-core) ---
+  StartFlow : (sender: actor_id, receiver: actor_id, rate: u128, buffer: u128) -> result(null, str);
+  AddFlowBuffer : (sender: actor_id, receiver: actor_id, amount: u128) -> result(null, str);
+  SetFlowRate : (sender: actor_id, receiver: actor_id, new_rate: u128) -> result(null, str);
+  StopFlow : (sender: actor_id, receiver: actor_id) -> result(null, str);
+  SettleAccount : (account: actor_id) -> null;
+  CollectFee : (from: actor_id, amount: u128, treasury: actor_id) -> result(null, str);
+
+  // --- Pure token: admin mint/burn ---
+  Mint : (to: actor_id, amount: u128) -> result(null, str);
+  Burn : (amount: u128) -> result(null, str);
+
+  // --- Admin: access control ---
+  AddFlowController : (controller: actor_id) -> result(null, str);
+  RemoveFlowController : (controller: actor_id) -> result(null, str);
+  SetAdmin : (new_admin: actor_id) -> result(null, str);
+  Pause : () -> result(null, str);
+  Unpause : () -> result(null, str);
+
+  // --- Queries ---
+  query BalanceOf : (account: actor_id) -> u128;
+  query StaticBalanceOf : (account: actor_id) -> u128;
+  query NetFlowRate : (account: actor_id) -> i128;
+  query GetAccountState : (account: actor_id) -> AccountState;
+  query GetFlow : (sender: actor_id, receiver: actor_id) -> opt Flow;
+  query Allowance : (owner: actor_id, spender: actor_id) -> u128;
+  query TotalSupply : () -> u128;
+  query Name : () -> str;
+  query Symbol : () -> str;
+  query Decimals : () -> u8;
+  query UnderlyingToken : () -> actor_id;
+  query IsNativeWrapper : () -> bool;
+  query IsPaused : () -> bool;
+  query IsFlowController : (account: actor_id) -> bool;
+  query GetMeta : () -> SuperTokenMeta;
+
+  // --- Events ---
+  events {
+    FeeCollected: struct {
+      payer: actor_id,
+      amount: u128,
+      treasury: actor_id,
+    };
+  }
+};

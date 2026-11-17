@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "rewrites": [
+    { "source": "/api/protocol-overview/defillama", "destination": "/api/defillama" },
+    { "source": "/api/defillama", "destination": "/api/defillama" },
+    { "source": "/api/protocol-overview", "destination": "/api/protocol-overview" },
+    { "source": "/protocol-overview", "destination": "/index.html" },
+    { "source": "/dashboard", "destination": "/index.html" },
+    { "source": "/defillama", "destination": "/index.html" },
+    { "source": "/wallets", "destination": "/index.html" },
+    { "source": "/agentic", "destination": "/index.html" },
+    { "source": "/trade", "destination": "/index.html" },
+    { "source": "/streams", "destination": "/index.html" },
+    { "source": "/bounty", "destination": "/index.html" }
+  ]
+}

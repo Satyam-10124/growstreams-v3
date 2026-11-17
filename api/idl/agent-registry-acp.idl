@@ -1,0 +1,173 @@
+// GrowStreams V3 — AgentRegistry & ACP (Agent Commerce Protocol) Sails IDL
+// Built with gear-foundation/vara-skills patterns:
+// 1. Actor-Model 4-Agent Suite Spawner (TRADER, SDE, ART, X)
+// 2. Inter-Agent ACP Job Escrow & Multi-Hop Revenue Routing
+// 3. Autonomous Self-Waking Heartbeats via Delayed Messages (msg::send_delayed) & Gas Reservations
+
+type AgentTemplate = enum {
+  Trader,
+  Sde,
+  Art,
+  XMarketing,
+};
+
+type AgentProfile = struct {
+  agent_id: u64,
+  owner: actor_id,
+  agent_actor: actor_id,
+  template: AgentTemplate,
+  name: str,
+  hire_fee_vara: u128,
+  splits_group_id: u64,
+  heartbeat_interval_blocks: u32,
+  total_jobs_completed: u64,
+  total_volume_routed: u128,
+  active: bool,
+  registered_at: u64,
+};
+
+type AcpJobStatus = enum {
+  Escrowed,
+  InProgress,
+  Subcontracted,
+  Delivered,
+  Disputed,
+  Cancelled,
+};
+
+type AcpJobOrder = struct {
+  job_id: u64,
+  requester: actor_id,
+  lead_agent_id: u64,
+  lead_agent_actor: actor_id,
+  budget_vara: u128,
+  stream_id: opt u64,
+  splits_group_id: u64,
+  deliverable_hash: opt str,
+  status: AcpJobStatus,
+  created_at: u64,
+  completed_at: opt u64,
+};
+
+type RegistryConfig = struct {
+  admin: actor_id,
+  stream_core: actor_id,
+  token_vault: actor_id,
+  splits_router: actor_id,
+  permission_manager: actor_id,
+  identity_registry: actor_id,
+  total_agents: u64,
+  total_jobs: u64,
+  total_volume_vara: u128,
+};
+
+constructor {
+  New : (
+    admin: actor_id,
+    stream_core: actor_id,
+    token_vault: actor_id,
+    splits_router: actor_id,
+    permission_manager: actor_id,
+    identity_registry: actor_id
+  );
+};
+
+service AgentSocietyService {
+  // --- 1. Spawn Single or Full 4-Agent Suite ---
+  SpawnAgent : (
+    agent_actor: actor_id,
+    template: AgentTemplate,
+    name: str,
+    hire_fee_vara: u128,
+    splits_group_id: u64,
+    heartbeat_interval_blocks: u32
+  ) -> result (u64, str);
+
+  SpawnFourAgentSuite : (
+    trader_actor: actor_id,
+    sde_actor: actor_id,
+    art_actor: actor_id,
+    x_actor: actor_id,
+    owner_handle: str,
+    splits_group_id: u64
+  ) -> result (vec u64, str);
+
+  // --- 2. Agent Commerce Protocol (ACP) Escrow & Multi-Agent Cascade ---
+  CreateAcpJob : (
+    lead_agent_id: u64,
+    stream_id: opt u64,
+    splits_group_id: u64,
+    task_uri: str
+  ) -> result (u64, str);
+
+  SubcontractAgent : (
+    job_id: u64,
+    from_agent_id: u64,
+    to_agent_id: u64,
+    sub_payment_vara: u128,
+    memo: str
+  ) -> result (null, str);
+
+  DeliverAcpJob : (
+    job_id: u64,
+    deliverable_hash: str
+  ) -> result (null, str);
+
+  // --- 3. Vara Actor-Model Autonomous Heartbeat (Delayed Message + Gas Reservation) ---
+  ReserveAgentGas : (agent_id: u64, reservation_amount: u64, duration_blocks: u32) -> result (null, str);
+  ScheduleAutonomousTick : (agent_id: u64, delay_blocks: u32) -> result (null, str);
+  ExecuteAutonomousTick : (agent_id: u64) -> result (null, str);
+
+  // --- Queries ---
+  query GetAgent : (agent_id: u64) -> opt AgentProfile;
+  query GetOwnerAgents : (owner: actor_id) -> vec AgentProfile;
+  query GetAllAgents : (offset: u32, limit: u32) -> vec AgentProfile;
+  query GetAcpJob : (job_id: u64) -> opt AcpJobOrder;
+  query GetConfig : () -> RegistryConfig;
+
+  // --- Events ---
+  events {
+    AgentSpawned: struct {
+      agent_id: u64,
+      owner: actor_id,
+      agent_actor: actor_id,
+      template: AgentTemplate,
+      name: str,
+      timestamp: u64,
+    };
+    FourAgentSuiteSpawned: struct {
+      owner: actor_id,
+      agent_ids: vec u64,
+      splits_group_id: u64,
+      timestamp: u64,
+    };
+    AcpJobCreated: struct {
+      job_id: u64,
+      requester: actor_id,
+      lead_agent_id: u64,
+      budget_vara: u128,
+      timestamp: u64,
+    };
+    AgentSubcontracted: struct {
+      job_id: u64,
+      from_agent_id: u64,
+      to_agent_id: u64,
+      amount_vara: u128,
+      memo: str,
+      timestamp: u64,
+    };
+    AcpJobDelivered: struct {
+      job_id: u64,
+      lead_agent_id: u64,
+      deliverable_hash: str,
+      payout_vara: u128,
+      timestamp: u64,
+    };
+    AutonomousTickExecuted: struct {
+      agent_id: u64,
+      agent_actor: actor_id,
+      next_tick_in_blocks: u32,
+      timestamp: u64,
+    };
+  }
+};

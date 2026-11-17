@@ -1,0 +1,9 @@
+{
+  "name": "growstreams-v3-protocol-dashboard",
+  "version": "3.2.0",
+  "private": true,
+  "description": "GrowStreams V3 × StonkBase — 100% On-Chain Smart-Contract-Driven Protocol & DeFiLlama $1M+ Volume Dashboard on Vara Mainnet (wss://rpc.vara.network)",
+  "dependencies": {
+    "ws": "^8.18.0"
+  }
+}

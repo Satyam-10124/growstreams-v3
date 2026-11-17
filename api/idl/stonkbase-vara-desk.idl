@@ -1,0 +1,100 @@
+// StonkBase × GrowStreams on Vara — Spot CLOB Orderbook DEX & 1x–5x RWA Perps Desk Sails IDL
+
+type OracleFeed = struct {
+  ticker: str,
+  fair_value_e8: u64,
+  confidence: u8,
+  updated_at: u64,
+};
+
+type SpotOrder = struct {
+  id: u64,
+  maker: actor_id,
+  pair: str,
+  is_buy: bool,
+  price_e8: u64,
+  amount_vara: u128,
+  filled_vara: u128,
+  is_active: bool,
+  created_at: u64,
+};
+
+type SpotTrade = struct {
+  id: u64,
+  order_id: u64,
+  pair: str,
+  maker: actor_id,
+  taker: actor_id,
+  price_e8: u64,
+  amount_vara: u128,
+  fee_vara: u128,
+  timestamp: u64,
+};
+
+type StockPosition = struct {
+  id: u64,
+  trader: actor_id,
+  is_agent_actor: bool,
+  ticker: str,
+  is_long: bool,
+  margin_gvara: u128,
+  leverage: u8,
+  notional_gvara: u128,
+  entry_price_e8: u64,
+  exit_price_e8: u64,
+  pnl_gvara: i128,
+  is_open: bool,
+  opened_at: u64,
+  closed_at: u64,
+};
+
+type VolumeStats = struct {
+  spot_volume_vara: u128,
+  spot_fees_vara: u128,
+  spot_trades_count: u64,
+  human_margin_volume: u128,
+  human_notional_volume: u128,
+  agent_margin_volume: u128,
+  agent_notional_volume: u128,
+  total_positions: u64,
+  total_rounds: u64,
+};
+
+constructor {
+  New : (
+    admin: actor_id,
+    gvara_token: actor_id,
+    token_vault: actor_id,
+    splits_router: actor_id
+  );
+};
+
+service StonkBaseService {
+  // --- 24/7 Bounded Oracle (±8% / 800 bps maxMoveBps) ---
+  PushOraclePrices : (tickers: vec str, prices_e8: vec u64, confidences: vec u8) -> bool;
+
+  // --- Spot CLOB Orderbook (DEXs Volume) ---
+  PlaceSpotOrder : (pair: str, is_buy: bool, price_e8: u64, amount_vara: u128) -> u64;
+  FillSpotOrder : (order_id: u64, fill_amount_vara: u128) -> u64;
+
+  // --- 1x–5x Stock & Perps Desk in gVARA (Perps Volume & Open Interest) ---
+  OpenStockPosition : (
+    ticker: str,
+    is_long: bool,
+    margin_gvara: u128,
+    leverage: u8,
+    is_agent_actor: bool,
+    splits_group_id: u64
+  ) -> u64;
+  CloseStockPosition : (position_id: u64, exit_price_e8: u64) -> i128;
+
+  // --- Queries ---
+  query GetOracleFeed : (ticker: str) -> opt OracleFeed;
+  query GetSpotOrder : (order_id: u64) -> opt SpotOrder;
+  query GetSpotTrade : (trade_id: u64) -> opt SpotTrade;
+  query GetSpotTradesCount : () -> u64;
+  query GetSpotOrdersCount : () -> u64;
+  query GetPosition : (position_id: u64) -> opt StockPosition;
+  query GetPositionsCount : () -> u64;
+  query GetVolumeStats : () -> VolumeStats;
+};

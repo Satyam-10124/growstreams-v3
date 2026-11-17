@@ -1,0 +1,283 @@
+.hero {
+  --bg: #18290d;
+  --bg-lift: #1c3110;
+  --ink: #f2f5ee;
+  --accent: #aaf46a;
+  --mono: rgba(203, 231, 173, 0.62);
+  --hairline: rgba(203, 231, 173, 0.16);
+  --tick: rgba(226, 243, 208, 0.55);
+  --tx-border: rgba(232, 246, 216, 0.5);
+
+  --sans: 'PP Neue Montreal', 'Aeonik', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --mono-face: 'IBM Plex Mono', ui-monospace, 'SFMono-Regular', Menlo, monospace;
+
+  position: relative;
+  padding: 12px;
+  background: #fff;
+}
+
+.panel {
+  position: relative;
+  display: grid;
+  place-items: center;
+  min-height: calc(100svh - 24px);
+  padding: 6vh 5vw;
+  overflow: hidden;
+  border-radius: 26px;
+  background: var(--bg);
+  transform-origin: 50% 40%;
+}
+
+/* soft centre lift so the headline reads over the field */
+.panel::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(58% 46% at 50% 50%, rgba(24, 41, 13, 0.72) 0%, rgba(24, 41, 13, 0) 70%);
+}
+
+/* ---------------- headline ---------------- */
+
+.headline {
+  position: relative;
+  z-index: 3;
+  margin: 0;
+  max-width: 16em;
+  font-family: var(--sans);
+  font-size: clamp(1.65rem, 2.35vw, 2.9rem);
+  font-weight: 500;
+  line-height: 1.16;
+  letter-spacing: -0.022em;
+  text-align: center;
+  text-wrap: balance;
+  color: var(--ink);
+}
+
+.accent {
+  color: var(--accent);
+}
+
+.word {
+  display: inline-block;
+  overflow: hidden;
+  margin-right: 0.26em;
+  padding-bottom: 0.14em;
+  margin-bottom: -0.14em;
+  vertical-align: bottom;
+}
+
+.wordInner {
+  display: inline-block;
+  will-change: transform;
+}
+
+/* ---------------- floating field ---------------- */
+
+.field {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+
+  /* the depth stage — raise this for a flatter dolly, lower it for a more
+     aggressive one */
+  perspective: 1000px;
+  /* the vanishing point — sits on the headline, so that's where the badges
+     appear to come from */
+  perspective-origin: 50% 50%;
+}
+
+/* `translate` (the standalone property) keeps the centring offset out of
+   `transform`, so GSAP can own transform on every one of these layers. */
+/* every badge is anchored dead centre; its resting position comes from a
+   transform offset set in JS, so perspective can scale it */
+.scroller {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  translate: -50% -50%;
+  will-change: transform, opacity, filter;
+  backface-visibility: hidden;
+}
+
+.mouse,
+.floater {
+  will-change: transform;
+}
+
+/* depth only controls opacity here — the scale lives on the inner
+   chip/card so GSAP's entrance tween has transform to itself. */
+.card {
+  opacity: calc(0.28 + 0.72 * var(--depth));
+}
+
+.card > * {
+  scale: calc(0.88 + 0.12 * var(--depth));
+}
+
+/* ---------------- metadata chip ---------------- */
+
+.meta {
+  position: relative;
+  min-width: 168px;
+  padding: 12px 16px 13px;
+  border: 1px solid var(--hairline);
+  font-family: var(--mono-face);
+  white-space: nowrap;
+}
+
+.corner {
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border: 1px solid var(--tick);
+}
+.cTL {
+  top: -1px;
+  left: -1px;
+  border-right: 0;
+  border-bottom: 0;
+}
+.cTR {
+  top: -1px;
+  right: -1px;
+  border-left: 0;
+  border-bottom: 0;
+}
+.cBL {
+  bottom: -1px;
+  left: -1px;
+  border-right: 0;
+  border-top: 0;
+}
+.cBR {
+  bottom: -1px;
+  right: -1px;
+  border-left: 0;
+  border-top: 0;
+}
+
+.metaLabel {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin-bottom: 9px;
+  font-size: 10px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--mono);
+}
+
+.caret {
+  width: 7px;
+  height: 7px;
+  flex: none;
+  color: var(--accent);
+}
+
+.metaBody {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  font-size: 11.5px;
+  letter-spacing: 0.04em;
+  color: var(--mono);
+}
+
+/* ---------------- transaction card ---------------- */
+
+.tx {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 300px;
+  padding: 9px 16px 9px 9px;
+  border: 1px solid var(--tx-border);
+  border-radius: 11px;
+  background: var(--bg-lift);
+}
+
+.txIcon {
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  flex: none;
+  border-radius: 7px;
+  color: #22320f;
+}
+.txIcon svg {
+  width: 18px;
+  height: 18px;
+}
+
+.lime {
+  background: #aaf46a;
+}
+.butter {
+  background: #ecdf6a;
+}
+.clay {
+  background: #f0c3a1;
+  color: #7a3a1c;
+}
+
+.txText {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  margin-right: auto;
+}
+
+.txTitle {
+  font-family: var(--sans);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: -0.005em;
+  color: var(--ink);
+}
+
+.txSub {
+  font-family: var(--mono-face);
+  font-size: 11.5px;
+  letter-spacing: 0.03em;
+  color: var(--mono);
+}
+
+.txAmount {
+  font-family: var(--sans);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--ink);
+  padding-left: 18px;
+}
+
+/* ---------------- responsive ---------------- */
+
+@media (max-width: 900px) {
+  .hideOnMobile {
+    display: none;
+  }
+  .tx {
+    min-width: 0;
+  }
+  .headline {
+    max-width: 14em;
+    font-size: clamp(1.5rem, 6.2vw, 2rem);
+  }
+  .panel {
+    padding: 8vh 24px;
+    border-radius: 20px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .scroller,
+  .mouse,
+  .floater,
+  .card,
+  .wordInner {
+    transform: none !important;
+  }
+}

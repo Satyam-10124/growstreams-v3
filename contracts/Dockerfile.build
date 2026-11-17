@@ -1,0 +1,36 @@
+FROM rust:latest
+
+WORKDIR /build
+
+# Copy contract sources
+COPY token-vault/ ./token-vault/
+COPY stream-core/ ./stream-core/
+
+# Patch Cargo.toml files to use newer gear deps (fixes gr_* linker bug in v1.6.2)
+RUN sed -i 's/sails-rs = "0.6"/sails-rs = "0.10"/g' /build/token-vault/Cargo.toml /build/stream-core/Cargo.toml && \
+    sed -i 's/gstd = "1.6"/gstd = "1.10.0"/g' /build/token-vault/Cargo.toml /build/stream-core/Cargo.toml && \
+    sed -i 's/version = "0.6", features = \["wasm-builder"\]/version = "0.10", features = ["wasm-builder"]/g' \
+        /build/token-vault/Cargo.toml /build/stream-core/Cargo.toml
+
+# Create workspace Cargo.toml with updated versions
+RUN cat > /build/Cargo.toml << 'EOF'
+[workspace]
+members = ["token-vault", "stream-core"]
+resolver = "2"
+
+[workspace.dependencies]
+sails-rs = "0.7"
+gstd = "1.10"
+parity-scale-codec = { version = "3", default-features = false, features = ["derive"] }
+scale-info = { version = "2", default-features = false, features = ["derive"] }
+EOF
+
+# Add WASM target + rust-src (required by gear-wasm-builder)
+RUN rustup target add wasm32-unknown-unknown wasm32v1-none && rustup component add rust-src
+
+# Build one at a time to avoid file-lock races
+RUN cargo build --release --target wasm32-unknown-unknown -p token-vault
+RUN cargo build --release --target wasm32-unknown-unknown -p stream-core
+
+# Show results
+RUN find /build/target -name "*.wasm" | head -20

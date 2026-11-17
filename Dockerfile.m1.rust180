@@ -1,0 +1,34 @@
+FROM rust:1.80
+
+WORKDIR /build
+
+# Copy M1-beta contract sources
+COPY m1_beta_extracted/GrowStreams_Backend-M1-beta/contracts/token-vault/ ./token-vault/
+COPY m1_beta_extracted/GrowStreams_Backend-M1-beta/contracts/stream-core/ ./stream-core/
+
+# Create minimal workspace, pinning toml versions to prevent the edition2024 error on Rust 1.80
+RUN cat > /build/Cargo.toml << 'EOF'
+[workspace]
+members = ["token-vault", "stream-core"]
+resolver = "2"
+
+[workspace.dependencies]
+sails-rs = "0.10"
+gstd = "1.10.0"
+parity-scale-codec = { version = "3", default-features = false, features = ["derive"] }
+scale-info = { version = "2", default-features = false, features = ["derive"] }
+EOF
+
+# Add WASM targets + rust-src
+RUN rustup target add wasm32-unknown-unknown && rustup component add rust-src
+
+# Generate a lockfile and force downgrade of packages that mistakenly released edition2024 to older rusts
+RUN cargo generate-lockfile || true
+RUN cargo update -p toml_datetime --precise 0.6.8 || true
+RUN cargo update -p toml_edit --precise 0.22.22 || true
+RUN cargo update -p idna_adapter --precise 1.2.0 || true
+RUN cargo update -p url --precise 2.5.2 || true
+
+# Build one at a time
+RUN cargo build --release -p token-vault
+RUN cargo build --release -p stream-core

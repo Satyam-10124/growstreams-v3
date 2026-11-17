@@ -1,0 +1,17 @@
+[workspace]
+
+[package]
+name = "stonkbase-vara-desk"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+description = "StonkBase x GrowStreams on Vara — Spot CLOB Orderbook DEX & 1x-5x RWA Perpetuals Desk"
+
+[dependencies]
+sails-rs = "0.10"
+gstd = "1.10.0"
+parity-scale-codec = { version = "3", default-features = false, features = ["derive"] }
+scale-info = { version = "2", default-features = false, features = ["derive"] }
+
+[build-dependencies]
+sails-rs = { version = "0.10", features = ["wasm-builder"] }

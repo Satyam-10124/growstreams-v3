@@ -1,0 +1,91 @@
+// GrowStreams V3 — TokenVault IDL
+// Deposit/buffer management, safe fungible token handling, emergency pause
+// Uses VaultError enum with #[export(unwrap_result)] for typed error surfaces
+
+type VaultBalance = struct {
+  owner: actor_id,
+  token: actor_id,
+  total_deposited: u128,
+  total_allocated: u128,
+  available: u128,
+};
+
+type VaultConfig = struct {
+  admin: actor_id,
+  stream_core: actor_id,
+  paused: bool,
+  total_tokens_held: u128,
+};
+
+type VaultError = enum {
+  Paused,
+  ZeroAmount,
+  UseDepositNative,
+  UseWithdrawNative,
+  InsufficientBalance,
+  VftTransferFailed,
+  Unauthorized,
+  NoAllocation,
+  AllocationExceeded,
+  NativeTransferFailed,
+};
+
+constructor {
+  New : ();
+};
+
+service VaultService {
+  // --- Mutations (all return Result<null, VaultError>) ---
+  DepositTokens : (token: actor_id, amount: u128) -> result (null, VaultError);
+  WithdrawTokens : (token: actor_id, amount: u128) -> result (null, VaultError);
+  AllocateToStream : (owner: actor_id, token: actor_id, amount: u128, stream_id: u64) -> result (null, VaultError);
+  ReleaseFromStream : (owner: actor_id, token: actor_id, amount: u128, stream_id: u64) -> result (null, VaultError);
+  TransferToReceiver : (token: actor_id, receiver: actor_id, amount: u128, stream_id: u64) -> result (null, VaultError);
+  DepositNative : () -> result (null, VaultError);
+  WithdrawNative : (amount: u128) -> result (null, VaultError);
+  SetStreamCore : (stream_core: actor_id) -> result (null, VaultError);
+  EmergencyPause : () -> result (null, VaultError);
+  EmergencyUnpause : () -> result (null, VaultError);
+
+  // --- Queries ---
+  query GetBalance : (owner: actor_id, token: actor_id) -> VaultBalance;
+  query GetStreamAllocation : (stream_id: u64) -> u128;
+  query IsPaused : () -> bool;
+  query GetConfig : () -> VaultConfig;
+
+  // --- Events ---
+  events {
+    TokensDeposited: struct {
+      owner: actor_id,
+      token: actor_id,
+      amount: u128,
+      new_balance: u128,
+    };
+    TokensWithdrawn: struct {
+      owner: actor_id,
+      token: actor_id,
+      amount: u128,
+      remaining: u128,
+    };
+    StreamAllocated: struct {
+      stream_id: u64,
+      owner: actor_id,
+      token: actor_id,
+      amount: u128,
+    };
+    StreamReleased: struct {
+      stream_id: u64,
+      owner: actor_id,
+      token: actor_id,
+      amount: u128,
+    };
+    ReceiverPaid: struct {
+      stream_id: u64,
+      receiver: actor_id,
+      token: actor_id,
+      amount: u128,
+    };
+    VaultPaused: struct { paused_by: actor_id, timestamp: u64 };
+    VaultUnpaused: struct { unpaused_by: actor_id, timestamp: u64 };
+  }
+};

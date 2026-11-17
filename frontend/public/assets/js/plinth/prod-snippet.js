@@ -1,0 +1,1 @@
+import{o as oe,M as Mt,q as qs}from"./kit-ClQnb89Q.js";oe.register("getOffscreenWorker",(()=>{const e=Mt("workerIndex.js"),t=new Blob([`import "${e}"`],{type:"text/javascript"}),r=window.URL.createObjectURL(t);return new Worker(r,{type:"module"})})),qs.init();

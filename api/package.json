@@ -1,0 +1,31 @@
+{
+  "name": "growstreams-api",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.mjs",
+    "dev": "node --watch src/index.mjs",
+    "keeper:oracle": "node stonk-oracle-keeper.mjs",
+    "check:codeids": "node check-code-ids.mjs"
+  },
+  "dependencies": {
+    "@gear-js/api": "0.38.3",
+    "@google/generative-ai": "^0.24.1",
+    "@polkadot/api": "13.2.1",
+    "@virtuals-protocol/game": "^0.1.14",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "helmet": "^8.0.0",
+    "morgan": "^1.10.0",
+    "node-cron": "^3.0.3",
+    "pg": "^8.13.0",
+    "sails-js": "0.3.1",
+    "sails-js-parser": "0.3.1",
+    "twitter-api-v2": "^1.17.0"
+  },
+  "engines": {
+    "node": "20.x"
+  }
+}

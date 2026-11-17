@@ -1,0 +1,202 @@
+
+.parallax-layer {
+  display: none !important;
+}
+
+.sidecar-hero {
+  background: #060c0a !important; /* Fallback dark background */
+}
+
+.sidecar-hero-layers {
+  background-image: url('/images/hero/growstream-hero-bg.png') !important;
+  background-size: cover !important;
+  background-position: top center !important;
+  background-repeat: no-repeat !important;
+  display: block !important;
+  height: 100% !important;
+}
+
+.sidecar-hero-overlay-bottom {
+  top: auto !important;
+  bottom: 0 !important;
+}
+
+.sidecar-conclusion {
+  background-color: #f7f4ee !important;
+}
+
+.sidecar-conclusion::before {
+  display: none !important;
+}
+
+.sidecar-conclusion__media,
+.sidecar-conclusion__shade {
+  display: block !important;
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 20%);
+  mask-image: linear-gradient(to bottom, transparent 0%, black 20%);
+}
+
+.sidecar-conclusion__media {
+  background-image: url('/images/footer/growstream-footer-bg.jpg') !important;
+  background-size: cover !important;
+  background-position: center bottom !important;
+}
+
+.sidecar-conclusion__media img {
+  display: none !important;
+}
+
+
+/* Green Theme Overrides for CTA and Pills */
+form button[type="submit"] {
+  background: #22c55e !important;
+  border-color: #15803d !important;
+  color: #ffffff !important;
+  background-image: none !important;
+}
+
+/* Universal Green Launch App Button Overrides */
+.blume-button,
+a.blume-button,
+button.blume-button,
+.cta-button,
+[data-download-button],
+.sidecar-conclusion__cta button,
+.sidecar-conclusion__cta a,
+.sidecar-hero-primary button,
+.sidecar-hero-primary a {
+  background: #22c55e !important;
+  background-image: none !important;
+  background-color: #22c55e !important;
+  border-color: #15803d !important;
+  color: #ffffff !important;
+  box-shadow: none !important;
+}
+
+.sidecar-conclusion__eyebrow {
+  background-color: color-mix(in srgb, #22c55e 12%, transparent) !important;
+  color: #22c55e !important;
+  border-color: transparent !important;
+}
+
+.blume-button:hover,
+a.blume-button:hover,
+[data-download-button]:hover {
+  background: #16a34a !important;
+  border-color: #166534 !important;
+}
+
+/* Cleaned up */
+.blume-lockup__mark {
+  display: none !important;
+}
+
+/* ── Mobile Responsive Overrides (max-width: 767px) ── */
+@media (max-width: 767px) {
+
+  /* Prevent horizontal scroll on all pages */
+  body, html {
+    overflow-x: hidden !important;
+  }
+
+  /* Hero section — prevent overflow, stack content */
+  .sidecar-hero {
+    min-height: auto !important;
+  }
+
+  .sidecar-hero-primary {
+    padding: 24px 16px !important;
+  }
+
+  .sidecar-hero-primary h1,
+  .sidecar-hero-primary .heading {
+    font-size: clamp(28px, 8vw, 48px) !important;
+    line-height: 1.2 !important;
+  }
+
+  /* Floating island — shrink and center on mobile */
+  .floating-island {
+    left: 8px !important;
+    right: 8px !important;
+    bottom: 12px !important;
+    transform: none !important;
+    width: auto !important;
+    max-width: 100% !important;
+    padding: 8px 12px !important;
+  }
+
+  .floating-island__inner {
+    flex-wrap: wrap !important;
+    gap: 8px !important;
+  }
+
+  .floating-island__text {
+    font-size: 13px !important;
+  }
+
+  /* Feature grids — force single column */
+  .sidecar-feature-grid,
+  [class*="feature-grid"],
+  [class*="card-grid"] {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Journey / step sections */
+  [class*="journey"],
+  [class*="step-grid"] {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Tables — allow horizontal scroll */
+  table {
+    display: block !important;
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+  }
+
+  /* CTA buttons — full width on mobile */
+  .sidecar-hero-primary a,
+  .sidecar-conclusion__cta a {
+    width: 100% !important;
+    justify-content: center !important;
+  }
+
+  /* Conclusion section */
+  .sidecar-conclusion {
+    padding: 48px 16px !important;
+  }
+
+  .sidecar-conclusion__cta {
+    flex-direction: column !important;
+    align-items: stretch !important;
+  }
+
+  /* Fix HeroStreamShowcase 3D overlap on mobile */
+  .hero-showcase-container {
+    flex-direction: column !important;
+    gap: 24px !important;
+  }
+
+  .hero-showcase-box {
+    transform: none !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    flex: none !important;
+    opacity: 1 !important;
+  }
+
+  /* Fix SVG overflow in journey section (Continuous Streaming / Automated Payouts) */
+  .journey__tile svg {
+    width: 100% !important;
+    max-width: 100% !important;
+    transform: none !important;
+    height: auto !important;
+  }
+
+  /* Hide the vertical green journey SVG line on mobile, as it overlaps content */
+  .journey__path {
+    display: none !important;
+  }
+}
+
+
